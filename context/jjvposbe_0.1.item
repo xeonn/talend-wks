@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_0BF4sD1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Dev">
+    <contextParameter xmi:id="_0BF4sT1kEeiUTuV2_ubfgg" comment="" name="jjvposbe_Server" prompt="jjvposbe_Server?" promptNeeded="false" type="id_String" value="192.168.56.7"/>
+    <contextParameter xmi:id="_0BF4sj1kEeiUTuV2_ubfgg" comment="" name="jjvposbe_Database" prompt="jjvposbe_Database?" promptNeeded="false" type="id_String" value="jjvposbe"/>
+    <contextParameter xmi:id="_0BF4sz1kEeiUTuV2_ubfgg" comment="" name="jjvposbe_Schema" prompt="jjvposbe_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0BF4tD1kEeiUTuV2_ubfgg" comment="" name="jjvposbe_Port" prompt="jjvposbe_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_0BF4tT1kEeiUTuV2_ubfgg" comment="" name="jjvposbe_Login" prompt="jjvposbe_Login?" promptNeeded="false" type="id_String" value="jejavi"/>
+    <contextParameter xmi:id="_0BF4tj1kEeiUTuV2_ubfgg" comment="" name="jjvposbe_Password" prompt="jjvposbe_Password?" promptNeeded="false" type="id_String" value="jejavi"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0BF4tz1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Live">
+    <contextParameter xmi:id="_0BF4uD1kEeiUTuV2_ubfgg" comment="" name="jjvposbe_Server" prompt="jjvposbe_Server?" promptNeeded="false" type="id_String" value="192.168.56.7"/>
+    <contextParameter xmi:id="_0BF4uT1kEeiUTuV2_ubfgg" comment="" name="jjvposbe_Database" prompt="jjvposbe_Database?" promptNeeded="false" type="id_String" value="jjvposbe"/>
+    <contextParameter xmi:id="_0BF4uj1kEeiUTuV2_ubfgg" comment="" name="jjvposbe_Schema" prompt="jjvposbe_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0BF4uz1kEeiUTuV2_ubfgg" comment="" name="jjvposbe_Port" prompt="jjvposbe_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_0BF4vD1kEeiUTuV2_ubfgg" comment="" name="jjvposbe_Login" prompt="jjvposbe_Login?" promptNeeded="false" type="id_String" value="jejavi"/>
+    <contextParameter xmi:id="_0BF4vT1kEeiUTuV2_ubfgg" comment="" name="jjvposbe_Password" prompt="jjvposbe_Password?" promptNeeded="false" type="id_String" value="jejavi"/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_z_eIED1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Development">
+    <contextParameter xmi:id="_z_eIET1kEeiUTuV2_ubfgg" comment="" name="ob_readonly_Password" prompt="ob_readonly_Password?" promptNeeded="false" type="id_Password" value="CW2Jz8AiJ70JvoHK/ATO8g=="/>
+    <contextParameter xmi:id="_z_eIEj1kEeiUTuV2_ubfgg" comment="" name="ob_readonly_Database" prompt="ob_readonly_Database?" promptNeeded="false" type="id_String" value="sabasun30"/>
+    <contextParameter xmi:id="_z_eIEz1kEeiUTuV2_ubfgg" comment="" name="ob_readonly_Server" prompt="ob_readonly_Server?" promptNeeded="false" type="id_String" value="192.168.56.111"/>
+    <contextParameter xmi:id="_z_eIFD1kEeiUTuV2_ubfgg" comment="" name="ob_readonly_Login" prompt="ob_readonly_Login?" promptNeeded="false" type="id_String" value="openbravo"/>
+    <contextParameter xmi:id="_z_eIFT1kEeiUTuV2_ubfgg" comment="" name="ob_readonly_Schema" prompt="ob_readonly_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_z_eIFj1kEeiUTuV2_ubfgg" comment="" name="ob_readonly_Port" prompt="ob_readonly_Port?" promptNeeded="false" type="id_String" value="5432"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_z_eIFz1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Live">
+    <contextParameter xmi:id="_z_eIGD1kEeiUTuV2_ubfgg" comment="" name="ob_readonly_Password" prompt="ob_readonly_Password?" promptNeeded="false" type="id_Password" value="YrcmiFp0tzA="/>
+    <contextParameter xmi:id="_z_eIGT1kEeiUTuV2_ubfgg" comment="" name="ob_readonly_Database" prompt="ob_readonly_Database?" promptNeeded="false" type="id_String" value="openbravo30"/>
+    <contextParameter xmi:id="_z_eIGj1kEeiUTuV2_ubfgg" comment="" name="ob_readonly_Server" prompt="ob_readonly_Server?" promptNeeded="false" type="id_String" value="sparrow"/>
+    <contextParameter xmi:id="_z_eIGz1kEeiUTuV2_ubfgg" comment="" name="ob_readonly_Login" prompt="ob_readonly_Login?" promptNeeded="false" type="id_String" value="openbravo"/>
+    <contextParameter xmi:id="_z_eIHD1kEeiUTuV2_ubfgg" comment="" name="ob_readonly_Schema" prompt="ob_readonly_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_z_eIHT1kEeiUTuV2_ubfgg" comment="" name="ob_readonly_Port" prompt="ob_readonly_Port?" promptNeeded="false" type="id_String" value="1433"/>
+  </talendfile:ContextType>
+</xmi:XMI>

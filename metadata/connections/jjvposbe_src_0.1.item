@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_yjkgEF8HEea4GcHvvINIsQ" name="jjvposbe_src" id="_oFJZYF8HEea4GcHvvINIsQ" label="jjvposbe_src" dataPackage="_ylOs8F8HEea4GcHvvINIsQ" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://192.168.56.7:5432/jjvposbe_ref" dbVersionString="V9_X" Port="5432" Username="jejavi" Password="MUU3oqhkOqI=" ServerName="192.168.56.7" DatasourceName="" FileFieldName="" SID="jjvposbe_ref" SqlSynthax="SQL Syntax" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="public">
+    <taggedValue xmi:id="_yjkgEV8HEea4GcHvvINIsQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_yk4HoF8HEea4GcHvvINIsQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_ylAqgF8HEea4GcHvvINIsQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_ylAqgV8HEea4GcHvvINIsQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_ylAqgl8HEea4GcHvvINIsQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_ylAqg18HEea4GcHvvINIsQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_ylAqhF8HEea4GcHvvINIsQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_ylAqhV8HEea4GcHvvINIsQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_ylGKEF8HEea4GcHvvINIsQ" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_ylGKEV8HEea4GcHvvINIsQ" tag="DB ProductVersion" value="9.5.2"/>
+    <taggedValue xmi:id="_ylGKEl8HEea4GcHvvINIsQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_yjkgEl8HEea4GcHvvINIsQ" key="CONN_PARA_KEY_USERNAME" value="jejavi"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_ylOs8F8HEea4GcHvvINIsQ" name="jjvposbe_ref" dataManager="_yjkgEF8HEea4GcHvvINIsQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_ylOs8V8HEea4GcHvvINIsQ" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

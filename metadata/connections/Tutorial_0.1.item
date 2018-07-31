@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_gLgEALg8EeW_p9GwhPyCzw" name="Tutorial" id="_K0RAsLg8EeW_p9GwhPyCzw" label="Tutorial" dataPackage="_Y_5q0Lj-EeW7JvSRHOwqJA" ContextMode="true" ContextId="_XAQuULj-EeW7JvSRHOwqJA" contextName="Default" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://192.168.200.174:5432/tutorial" dbVersionString="V9_X" Port="context.Tutorial_Port" Username="context.Tutorial_Login" Password="context.Tutorial_Password" ServerName="context.Tutorial_Server" DatasourceName="" FileFieldName="" SID="context.Tutorial_Database" SqlSynthax="SQL Syntax" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="context.Tutorial_Schema">
+    <taggedValue xmi:id="_gLgEAbg8EeW_p9GwhPyCzw" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_gLzmALg8EeW_p9GwhPyCzw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_gL66wLg8EeW_p9GwhPyCzw" tag="Status" value=""/>
+    <taggedValue xmi:id="_gL66wbg8EeW_p9GwhPyCzw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_gL66wrg8EeW_p9GwhPyCzw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_gL66w7g8EeW_p9GwhPyCzw" tag="Description" value=""/>
+    <taggedValue xmi:id="_gL66xLg8EeW_p9GwhPyCzw" tag="Author" value=""/>
+    <taggedValue xmi:id="_gL66xbg8EeW_p9GwhPyCzw" tag="otherParameter"/>
+    <taggedValue xmi:id="_gtCDwLg8EeW_p9GwhPyCzw" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_gtCq0Lg8EeW_p9GwhPyCzw" tag="DB ProductVersion" value="9.3.5"/>
+    <taggedValue xmi:id="_gtCq0bg8EeW_p9GwhPyCzw" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_gLgEArg8EeW_p9GwhPyCzw" key="CONN_PARA_KEY_USERNAME" value="context.Tutorial_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_Y_5q0Lj-EeW7JvSRHOwqJA" name="tutorial" dataManager="_gLgEALg8EeW_p9GwhPyCzw">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Y_5q0bj-EeW7JvSRHOwqJA" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

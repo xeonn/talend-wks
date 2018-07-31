@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendNoSQLMetadata:NoSQLConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendNoSQLMetadata="http://www.talend.org/nosql" xmi:id="_lvpNIIy6EeWPP8XRWyn7-Q" name="Cassandra" label="Cassandra" ContextMode="true" ContextId="_beFOsJpYEeWWouKlwQFb5w" contextName="Dev" dbType="CASSANDRA">
+  <attributes xmi:id="_bfLa4JpYEeWWouKlwQFb5w" key="DB_VERSION" value="CASSANDRA_2_0_0"/>
+  <attributes xmi:id="_bfLa4ZpYEeWWouKlwQFb5w" key="API_TYPE" value="DATASTAX"/>
+  <attributes xmi:id="_bfLa4ppYEeWWouKlwQFb5w" key="HOST" value="context.Cassandra_Server"/>
+  <attributes xmi:id="_bfLa45pYEeWWouKlwQFb5w" key="PORT" value="context.Cassandra_Port"/>
+  <attributes xmi:id="_bfLa5JpYEeWWouKlwQFb5w" key="DATABASE" value="context.Cassandra_Keyspace"/>
+  <attributes xmi:id="_bfLa5ZpYEeWWouKlwQFb5w" key="REQUIRED_AUTHENTICATION" value="true"/>
+  <attributes xmi:id="_bfLa5ppYEeWWouKlwQFb5w" key="USERNAME" value="context.Cassandra_UserName"/>
+  <attributes xmi:id="_bfLa55pYEeWWouKlwQFb5w" key="PASSWORD" value="context.Cassandra_Password"/>
+</TalendNoSQLMetadata:NoSQLConnection>

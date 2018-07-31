@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_0A_LAD1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Dev">
+    <contextParameter xmi:id="_0A_LAT1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Login" prompt="jjvretail_Login?" promptNeeded="false" type="id_String" value="jejavi"/>
+    <contextParameter xmi:id="_0A_LAj1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Database" prompt="jjvretail_Database?" promptNeeded="false" type="id_String" value="retailmgr-ori"/>
+    <contextParameter xmi:id="_0A_LAz1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Server" prompt="jjvretail_Server?" promptNeeded="false" type="id_String" value="192.168.56.111"/>
+    <contextParameter xmi:id="_0A_LBD1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Port" prompt="jjvretail_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_0A_LBT1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Schema" prompt="jjvretail_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0A_LBj1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Password" prompt="jjvretail_Password?" promptNeeded="false" type="id_Password" value="MUU3oqhkOqI="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0A_LBz1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Live">
+    <contextParameter xmi:id="_0A_LCD1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Login" prompt="jjvretail_Login?" promptNeeded="false" type="id_String" value="jejavi"/>
+    <contextParameter xmi:id="_0A_LCT1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Database" prompt="jjvretail_Database?" promptNeeded="false" type="id_String" value="jjv.retailmgr"/>
+    <contextParameter xmi:id="_0A_LCj1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Server" prompt="jjvretail_Server?" promptNeeded="false" type="id_String" value="192.168.100.120"/>
+    <contextParameter xmi:id="_0A_LCz1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Port" prompt="jjvretail_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_0A_LDD1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Schema" prompt="jjvretail_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0A_LDT1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Password" prompt="jjvretail_Password?" promptNeeded="false" type="id_Password" value="MUU3oqhkOqI="/>
+  </talendfile:ContextType>
+</xmi:XMI>

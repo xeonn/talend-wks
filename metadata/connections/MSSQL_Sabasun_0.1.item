@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_4oQOoEEZEeO67fSLRRwZow" name="MSSQL_Sabasun" id="_utcLUEEZEeO67fSLRRwZow" label="MSSQL_Sabasun" dataPackage="_4uA4YEEZEeO67fSLRRwZow" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://192.168.56.101:1433/SABASUN;" Port="1433" Username="sa" Password="YrcmiFp0tzA=" ServerName="192.168.56.101" DatasourceName="" FileFieldName="" SID="SABASUN" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo">
+    <taggedValue xmi:id="_4oQOoUEZEeO67fSLRRwZow" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_4phZ8EEZEeO67fSLRRwZow" tag="package filter" value=""/>
+    <taggedValue xmi:id="_4qiGkEEZEeO67fSLRRwZow" tag="Status" value=""/>
+    <taggedValue xmi:id="_4qiGkUEZEeO67fSLRRwZow" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_4qiGkkEZEeO67fSLRRwZow" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_4qiGk0EZEeO67fSLRRwZow" tag="Description" value=""/>
+    <taggedValue xmi:id="_4qiGlEEZEeO67fSLRRwZow" tag="Author" value=""/>
+    <taggedValue xmi:id="_4qiGlUEZEeO67fSLRRwZow" tag="otherParameter"/>
+    <taggedValue xmi:id="_4qjUsEEZEeO67fSLRRwZow" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_4qjUsUEZEeO67fSLRRwZow" tag="DB ProductVersion" value="11.00.2100"/>
+    <taggedValue xmi:id="_4qjUskEZEeO67fSLRRwZow" tag="DB IdentifierQuoteString" value="&quot;"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_4uA4YEEZEeO67fSLRRwZow" name="SABASUN" dataManager="_4oQOoEEZEeO67fSLRRwZow">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_4uA4YUEZEeO67fSLRRwZow" name="dbo"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_0AIPYD1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Development">
+    <contextParameter xmi:id="_0AIPYT1kEeiUTuV2_ubfgg" comment="" name="posdist_Server" prompt="posdist_Server?" promptNeeded="false" type="id_String" value="192.168.56.111"/>
+    <contextParameter xmi:id="_0AIPYj1kEeiUTuV2_ubfgg" comment="" name="posdist_Schema" prompt="posdist_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0AIPYz1kEeiUTuV2_ubfgg" comment="" name="posdist_Port" prompt="posdist_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_0AIPZD1kEeiUTuV2_ubfgg" comment="" name="posdist_Database" prompt="posdist_Database?" promptNeeded="false" type="id_String" value="pos_dist"/>
+    <contextParameter xmi:id="_0AIPZT1kEeiUTuV2_ubfgg" comment="" name="posdist_Login" prompt="posdist_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_0AIPZj1kEeiUTuV2_ubfgg" comment="" name="posdist_Password" prompt="posdist_Password?" promptNeeded="false" type="id_String" value="postgres"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0AIPZz1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Flamingo">
+    <contextParameter xmi:id="_0AIPaD1kEeiUTuV2_ubfgg" comment="" name="posdist_Server" prompt="posdist_Server?" promptNeeded="false" type="id_String" value="flamingo"/>
+    <contextParameter xmi:id="_0AIPaT1kEeiUTuV2_ubfgg" comment="" name="posdist_Schema" prompt="posdist_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0AIPaj1kEeiUTuV2_ubfgg" comment="" name="posdist_Port" prompt="posdist_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_0AIPaz1kEeiUTuV2_ubfgg" comment="" name="posdist_Database" prompt="posdist_Database?" promptNeeded="false" type="id_String" value="pos_dist"/>
+    <contextParameter xmi:id="_0AIPbD1kEeiUTuV2_ubfgg" comment="" name="posdist_Login" prompt="posdist_Login?" promptNeeded="false" type="id_String" value="unicenta"/>
+    <contextParameter xmi:id="_0AIPbT1kEeiUTuV2_ubfgg" comment="" name="posdist_Password" prompt="posdist_Password?" promptNeeded="false" type="id_String" value="unicenta"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0AIPbj1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Rajawali">
+    <contextParameter xmi:id="_0AIPbz1kEeiUTuV2_ubfgg" comment="" name="posdist_Server" prompt="posdist_Server?" promptNeeded="false" type="id_String" value="rajawali"/>
+    <contextParameter xmi:id="_0AIPcD1kEeiUTuV2_ubfgg" comment="" name="posdist_Schema" prompt="posdist_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0AIPcT1kEeiUTuV2_ubfgg" comment="" name="posdist_Port" prompt="posdist_Port?" promptNeeded="false" type="id_String" value="5433"/>
+    <contextParameter xmi:id="_0AIPcj1kEeiUTuV2_ubfgg" comment="" name="posdist_Database" prompt="posdist_Database?" promptNeeded="false" type="id_String" value="pos_dist"/>
+    <contextParameter xmi:id="_0AIPcz1kEeiUTuV2_ubfgg" comment="" name="posdist_Login" prompt="posdist_Login?" promptNeeded="false" type="id_String" value="unicenta"/>
+    <contextParameter xmi:id="_0AIPdD1kEeiUTuV2_ubfgg" comment="" name="posdist_Password" prompt="posdist_Password?" promptNeeded="false" type="id_String" value="unicenta"/>
+  </talendfile:ContextType>
+</xmi:XMI>

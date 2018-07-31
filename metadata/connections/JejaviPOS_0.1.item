@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_miLacFdcEeOvH-HNm1SPQw" name="JejaviPOS" id="_fL_3EFdcEeOvH-HNm1SPQw" label="JejaviPOS" dataPackage="_pjflwBJGEeWqR9kYUPDCOw" ContextMode="true" ContextId="_eKtjwFddEeOvH-HNm1SPQw" contextName="Development" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://192.168.56.111:5432/unicentaopos" dbVersionString="V9_X" Port="context.jejavipos_Port" Username="context.jejavipos_Login" Password="context.jejavipos_Password" ServerName="context.jejavipos_Server" DatasourceName="" FileFieldName="" SID="context.jejavipos_Database" SqlSynthax="SQL Syntax" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="context.jejavipos_Schema">
+    <taggedValue xmi:id="_miLacVdcEeOvH-HNm1SPQw" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_mix3YFdcEeOvH-HNm1SPQw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_mjoL8FdcEeOvH-HNm1SPQw" tag="Status" value=""/>
+    <taggedValue xmi:id="_mjoL8VdcEeOvH-HNm1SPQw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_mjoL8ldcEeOvH-HNm1SPQw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_mjoL81dcEeOvH-HNm1SPQw" tag="Description" value=""/>
+    <taggedValue xmi:id="_mjoL9FdcEeOvH-HNm1SPQw" tag="Author" value=""/>
+    <taggedValue xmi:id="_mjoL9VdcEeOvH-HNm1SPQw" tag="otherParameter"/>
+    <taggedValue xmi:id="_mjozAFdcEeOvH-HNm1SPQw" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_mjozAVdcEeOvH-HNm1SPQw" tag="DB ProductVersion" value="9.2.10"/>
+    <taggedValue xmi:id="_mjozAldcEeOvH-HNm1SPQw" tag="DB IdentifierQuoteString" value="&quot;"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_pjflwBJGEeWqR9kYUPDCOw" name="unicentaopos" dataManager="_miLacFdcEeOvH-HNm1SPQw">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_pjflwRJGEeWqR9kYUPDCOw" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Dev" jobType="Standard">
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="Openbravo_Login" prompt="Openbravo_Login?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
+    <contextParameter comment="" name="Openbravo_Port" prompt="Openbravo_Port?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="5432"/>
+    <contextParameter comment="" name="Openbravo_Schema" prompt="Openbravo_Schema?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="public"/>
+    <contextParameter comment="" name="Openbravo_Server" prompt="Openbravo_Server?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Openbravo_Database" prompt="Openbravo_Database?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="sunyield"/>
+    <contextParameter comment="" name="Openbravo_Password" prompt="Openbravo_Password?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
+    <contextParameter comment="" name="STMT_DATE" prompt="STMT_DATE?" promptNeeded="false" type="id_String" value="2016-02-15"/>
+    <contextParameter comment="" name="ACCTSCHEMA_ID" prompt="ACCTSCHEMA_ID?" promptNeeded="false" type="id_String" value="8074D3676C504F1C908B0A3E93B73D5B"/>
+    <contextParameter comment="" name="ELEMENTVALUE_ID" prompt="ELEMENTVALUE_ID?" promptNeeded="false" type="id_String" value="A49E09805CA4430E861A32B92542B806"/>
+    <contextParameter comment="" name="Cassandra_Password" prompt="Cassandra_Password?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="cassandra"/>
+    <contextParameter comment="" name="Cassandra_Keyspace" prompt="Cassandra_Keyspace?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="retailmgr"/>
+    <contextParameter comment="" name="Cassandra_Port" prompt="Cassandra_Port?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="9042"/>
+    <contextParameter comment="" name="Cassandra_UserName" prompt="Cassandra_UserName?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="cassandra"/>
+    <contextParameter comment="" name="Cassandra_Server" prompt="Cassandra_Server?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="CLIENT_ID" prompt="CLIENT_ID?" promptNeeded="false" type="id_String" value="1914FBCAF4D442B2B08F3310B7F26A6C"/>
+  </context>
+  <context confirmationNeeded="false" name="Live">
+    <contextParameter comment="" name="Openbravo_Login" prompt="Openbravo_Login?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
+    <contextParameter comment="" name="Openbravo_Port" prompt="Openbravo_Port?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="5432"/>
+    <contextParameter comment="" name="Openbravo_Schema" prompt="Openbravo_Schema?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="public"/>
+    <contextParameter comment="" name="Openbravo_Server" prompt="Openbravo_Server?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Openbravo_Database" prompt="Openbravo_Database?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
+    <contextParameter comment="" name="Openbravo_Password" prompt="Openbravo_Password?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
+    <contextParameter comment="" name="STMT_DATE" prompt="STMT_DATE?" promptNeeded="false" type="id_String" value="2016-01-15"/>
+    <contextParameter comment="" name="ACCTSCHEMA_ID" prompt="ACCTSCHEMA_ID?" promptNeeded="false" type="id_String" value="8074D3676C504F1C908B0A3E93B73D5B"/>
+    <contextParameter comment="" name="ELEMENTVALUE_ID" prompt="ELEMENTVALUE_ID?" promptNeeded="false" type="id_String" value="A49E09805CA4430E861A32B92542B806"/>
+    <contextParameter comment="" name="Cassandra_Password" prompt="Cassandra_Password?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="cassandra"/>
+    <contextParameter comment="" name="Cassandra_Keyspace" prompt="Cassandra_Keyspace?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="retailmgr"/>
+    <contextParameter comment="" name="Cassandra_Port" prompt="Cassandra_Port?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="9042"/>
+    <contextParameter comment="" name="Cassandra_UserName" prompt="Cassandra_UserName?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="cassandra"/>
+    <contextParameter comment="" name="Cassandra_Server" prompt="Cassandra_Server?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="192.168.100.21"/>
+    <contextParameter comment="" name="CLIENT_ID" prompt="CLIENT_ID?" promptNeeded="false" type="id_String" value="1914FBCAF4D442B2B08F3310B7F26A6C"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/usr/local/Apps/TOS_BD-20151029_1337-V6.1.0/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_FfgMoKGtEeW-yKyvGnHdrg" name="DataOperation"/>
+    <routinesParameter id="_FfkeEKGtEeW-yKyvGnHdrg" name="Mathematical"/>
+    <routinesParameter id="_FfdwYKGtEeW-yKyvGnHdrg" name="Numeric"/>
+    <routinesParameter id="_Ffio4KGtEeW-yKyvGnHdrg" name="Relational"/>
+    <routinesParameter id="_FfrLwKGtEeW-yKyvGnHdrg" name="StringHandling"/>
+    <routinesParameter id="_FevXoKGtEeW-yKyvGnHdrg" name="TalendDataGenerator"/>
+    <routinesParameter id="_FfpWkKGtEeW-yKyvGnHdrg" name="TalendDate"/>
+    <routinesParameter id="_Ffm6UKGtEeW-yKyvGnHdrg" name="TalendString"/>
+    <routinesParameter id="_WkXnMFhAEeW8y5tb7RwHJw" name="strtouuid"/>
+    <routinesParameter id="_ztxUED1kEeiUTuV2_ubfgg" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dx7I0CDBEeOFVpCbbu2LHQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Openbravo_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Openbravo_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Openbravo_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Openbravo_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.Openbravo_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudjwOxeVpz4pU9CFfqdqGyrAk3RnyU/Q/s="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Openbravo"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dx7I0CDBEeOFVpCbbu2LHQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Openbravo_Server" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Openbravo_Port" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Openbravo_Database" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Openbravo_Schema" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Openbravo_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudjwOxeVpz4pU9CFfqdqGyrAk3RnyU/Q/s=" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select (select Name from AD_Client where AD_Client_ID = X.AD_Client_ID) as Client, (select Name from AD_Org where AD_Org_ID = X.AD_Org_ID) as Organization,&#xA;(select ISO_Code from C_Currency where C_Currency_ID = (select C_Currency_ID from C_AcctSchema where C_AcctSchema_ID = '&quot; + context.ACCTSCHEMA_ID + &quot;')) as base_currency,&#xA;(select name from c_BPartner where C_BPartner_ID = X.C_BPartner_ID) as BPartner,&#xA;(select value || ' - ' || name from c_elementvalue where c_elementvalue_id = '&quot; + context.ELEMENTVALUE_ID + &quot;') AS account,&#xA;(select name from C_BP_Group where C_BP_Group_ID = X.C_BP_Group_ID) as BPGroup, DocumentNo, DateInvoiced,&#xA;DateInvoiced + (select netdays from C_PaymentTerm where C_PaymentTerm_ID = X.C_PaymentTerm_ID) as DueDate, POReference, Sum(GrandTotal) as GrandTotal,&#xA;&#x9;(case when scope = 1 then sum(Outstanding) else 0 end) as one,&#xA;&#x9;(case when scope = 2 then sum(Outstanding) else 0 end) as two,&#xA;&#x9;(case when scope = 3 then sum(Outstanding) else 0 end) as three,&#xA;&#x9;(case when scope = 4 then sum(Outstanding) else 0 end) as four,&#xA;&#x9;(case when scope = 5 then sum(Outstanding) else 0 end) as five,&#xA;&#x9;sum(Outstanding) as Outstanding,&#xA;&#x9;(case when scope = 1 then sum(BaseCurOutstanding) else 0 end) as basecur_one,&#xA;&#x9;(case when scope = 2 then sum(BaseCurOutstanding) else 0 end) as basecur_two,&#xA;&#x9;(case when scope = 3 then sum(BaseCurOutstanding) else 0 end) as basecur_three,&#xA;&#x9;(case when scope = 4 then sum(BaseCurOutstanding) else 0 end) as basecur_four,&#xA;&#x9;(case when scope = 5 then sum(BaseCurOutstanding) else 0 end) as basecur_five,&#xA;&#x9;sum(BaseCurOutstanding) as BaseCurOutstanding&#xA;from (&#xA;&#xA;select I.AD_Client_ID, I.AD_Org_ID,&#xA;I.C_BPartner_ID, B.C_BP_Group_ID,&#xA;I.C_Currency_ID, I.C_PaymentTerm_ID,&#xA;I.DocumentNo, coalesce(i.POReference, (select documentno from c_order where C_Order_id = I.C_Order_ID), '**') as POReference, i.DateInvoiced, GrandTotal * (select (case when isReversal = 'Y' then -1 else 1 end) as negate from C_DocType where c_doctype_id = I.C_DocType_ID) as grandtotal,&#xA;(GrandTotal * (select (case when isReversal = 'Y' then -1 else 1 end) as negate from C_DocType where c_doctype_id = I.C_DocType_ID))-&#xA;&#x9;coalesce((&#xA;&#x9;select sum(v.paidamt) + sum(v.writeoffamt) from fin_payment_detail_v v, fin_payment p&#xA;&#x9;where v.PaymentDate  &lt;= '&quot; + context.STMT_DATE + &quot;'&#xA;&#x9;and i.DocumentNo = v.invoiceno&#xA;&#x9;and v.AD_Client_ID = i.AD_Client_ID&#xA;&#x9;and v.AD_Org_ID = i.AD_Org_ID&#xA;        and v.fin_payment_id=p.fin_payment_id&#xA;&#x9;and p.posted='Y'&#xA;&#x9;),0)  as Outstanding,&#xA;c_currency_convert( (GrandTotal * (select (case when isReversal = 'Y' then -1 else 1 end) as negate from C_DocType where c_doctype_id = I.C_DocType_ID)) - coalesce((select sum(v.paidamt) + sum(v.writeoffamt) from fin_payment_detail_v  v, fin_payment p&#xA;&#x9;where v.PaymentDate  &lt;= '&quot; + context.STMT_DATE + &quot;'&#xA;&#x9;and i.DocumentNo = invoiceno&#xA;&#x9;and v.AD_Client_ID = i.AD_Client_ID&#xA;       &#x9;and v.fin_payment_id=p.fin_payment_id&#xA;        and p.posted='Y'&#xA;&#x9;and v.AD_Org_ID = i.AD_Org_ID),0) , C_Currency_ID, to_char((select C_Currency_ID from C_AcctSchema where C_AcctSchema_ID = '&quot; + context.ACCTSCHEMA_ID + &quot;')), to_date(DateInvoiced), null, I.AD_Client_ID) as BaseCurOutstanding,&#xA;&#x9;itsg_aging_get_scope_hist(DateInvoiced, '&quot; + context.STMT_DATE + &quot;', 30,60,90,120) as scope&#xA;from c_invoice I join C_BPartner B on i.C_BPartner_ID = B.C_BPartner_ID&#xA;where DateInvoiced &lt;= '&quot; + context.STMT_DATE + &quot;'&#xA;and I.posted = 'Y'&#xA;and i.docstatus='CO'&#xA;and i.c_invoice_id in (select record_id from fact_acct where account_id='&quot; + context.ELEMENTVALUE_ID + &quot;'&#xA; and ad_table_id='318' and dateacct&lt;='&quot; + context.STMT_DATE + &quot;')&#xA;&#xA;union all&#xA;&#xA;select P.AD_Client_ID, P.AD_Org_ID, P.C_BPartner_ID, B.C_BP_Group_ID, P.C_Currency_ID, null as C_PaymentTerm_ID,&#xA;'*Generated Credit*' AS DocumentNo, '' as POReference, MAX(paymentdate) as DateInvoiced, sum(Generated_Credit) * -1 as GrandTotal,&#xA;(sum(Generated_Credit) - coalesce((&#xA; select sum(coalesce(Used_Credit,0) + coalesce(O.writeoffamt,0))&#xA; from fin_payment O&#xA; WHERE O.C_BPartner_ID = P.C_BPartner_ID&#xA; and O.Paymentdate &lt;= '&quot; + context.STMT_DATE + &quot;'&#xA; and O.Generated_Credit = 0&#xA; and O.posted='Y'&#xA;),0)) * -1 as outstanding,&#xA;&#xA;c_currency_convert(&#xA; sum(Generated_credit) - coalesce((select sum(Used_Credit) + sum(A.writeoffamt)&#xA;  from fin_payment A join C_Bpartner B on P.C_BPartner_ID = B.C_BPartner_ID&#xA;  WHERE P.C_BPartner_ID = A.C_BPartner_ID&#xA;  and A.PaymentDate &lt;= '&quot; + context.STMT_DATE + &quot;'&#xA;  and A.posted='Y'&#xA;  and A.Generated_Credit = 0),0) , C_Currency_ID, to_char((select C_Currency_ID from C_AcctSchema where C_AcctSchema_ID = '&quot; + context.ACCTSCHEMA_ID + &quot;')), to_date(max(PaymentDate)), null, P.AD_Client_ID)* -1 as BaseCurOutstanding,&#xA;&#x9;itsg_aging_get_scope_hist(max(PaymentDate), '&quot; + context.STMT_DATE + &quot;', 30,60,90,120) as scope&#xA;from Fin_Payment P join C_Bpartner B on P.C_BPartner_ID = B.C_BPartner_ID&#xA;WHERE Paymentdate &lt;= '&quot; + context.STMT_DATE + &quot;'&#xA;and Generated_Credit &lt;> 0&#xA;and posted='Y'&#xA;and p.fin_payment_id in (select record_id from fact_acct where account_id='&quot; + context.ELEMENTVALUE_ID + &quot;'&#xA;and ad_table_id='D1A97202E832470285C9B1EB026D54E2' and dateacct&lt;='&quot; + context.STMT_DATE + &quot;')&#xA;group by P.AD_Client_ID, P.AD_Org_ID, P.C_BPartner_ID, B.C_BP_Group_ID, P.C_Currency_ID&#xA;&#xA;union all&#xA;&#xA;select gl.AD_Client_ID, gl.AD_Org_ID, gl.C_BPartner_ID, B.C_BP_Group_ID, gl.C_Currency_ID, null as  C_PaymentTerm_ID,&#xA;gh.DocumentNo, gh.description as POReference, MAX(gh.dateacct) as DateInvoiced,&#xA;sum(amtsourcedr-amtsourcecr) as grandtotal,&#xA;sum(amtsourcedr-amtsourcecr) as outstanding,&#xA;sum(amtacctdr-amtacctcr) as BaseCurOutstanding,&#xA;itsg_aging_get_scope_hist(max(gh.dateacct), '&quot; + context.STMT_DATE + &quot;', 30,60,90,120) as scope&#xA;from gl_journalline gl,gl_journal gh,C_Bpartner B&#xA;WHERE  gl.gl_journal_id=gh.gl_journal_id&#xA;and gl.C_BPartner_ID = B.C_BPartner_ID&#xA;and gh.dateacct &lt;= '&quot; + context.STMT_DATE + &quot;'&#xA;and gl.gl_journalline_id in (select line_id from fact_acct where ad_table_id='224' and account_id='&quot; + context.ELEMENTVALUE_ID + &quot;')&#xA;and posted='Y'&#xA;group by gl.AD_Client_ID, gl.AD_Org_ID, gh.DocumentNo,gh.description,gl.C_BPartner_ID, B.C_BP_Group_ID, gl.C_Currency_ID,gl.gl_journalline_id&#xA;) as X&#xA;where (x.c_bpartner_id in (select a.c_bpartner_id from c_bp_customer_acct a , c_validcombination v where a.c_receivable_acct=v.c_validcombination_id and v.account_id='&quot; + context.ELEMENTVALUE_ID + &quot;'))&#xA;group by X.AD_Client_ID, AD_Org_ID, C_Bpartner_ID, C_BP_Group_ID, DocumentNO, DateInvoiced,  C_PaymentTerm_ID, POReference, Scope&#xA;having sum(Outstanding) &lt;> 0&#xA;order by BPGroup, BPartner, DateInvoiced, DocumentNO, POReference&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="client"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="organization"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="base_currency"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="bpartner"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="account"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="bpgroup"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="documentno"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dateinvoiced"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="duedate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="poreference"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="grandtotal"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="one"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="two"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="three"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="four"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="five"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="outstanding"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="basecur_one"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="basecur_two"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="basecur_three"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="basecur_four"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="basecur_five"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="basecuroutstanding"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Outstanding Invoice"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlInput_1">
+      <column comment="" key="false" length="60" name="client" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="organization" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="base_currency" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="bpartner" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="account" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="bpgroup" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="documentno" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="29" name="dateinvoiced" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="6" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="duedate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="poreference" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="grandtotal" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="one" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="two" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="three" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="four" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="five" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="outstanding" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_one" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_two" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_three" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_four" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_five" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecuroutstanding" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_8QGbkNM1EeW7rtYmJTt-UA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="out1">
+      <column comment="" key="true" length="60" name="bpgroup" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="aging_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="16" usefulColumn="true"/>
+      <column comment="" key="true" length="60" name="bpartner" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="29" name="dateinvoiced" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="6" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="documentno" nullable="false" pattern="" precision="0" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="stmt_date" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="organization" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="client" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="base_currency" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="account" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="duedate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="poreference" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="grandtotal" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="one" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="two" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="three" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="four" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="five" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="outstanding" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_one" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_two" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_three" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_four" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_five" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecuroutstanding" nullable="true" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="qtyinvoiced" nullable="false" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="qtydelivered" nullable="false" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="bpgroup" expression="row1.bpgroup " type="id_String" nullable="true"/>
+        <mapperTableEntries name="aging_id" expression="java.util.UUID.randomUUID().toString() " type="id_String"/>
+        <mapperTableEntries name="bpartner" expression="row1.bpartner " type="id_String"/>
+        <mapperTableEntries name="dateinvoiced" expression="row1.dateinvoiced " type="id_Date"/>
+        <mapperTableEntries name="documentno" expression="row1.documentno " type="id_String"/>
+        <mapperTableEntries name="stmt_date" expression="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, context.STMT_DATE) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="organization" expression="row1.organization " type="id_String"/>
+        <mapperTableEntries name="client" expression="row1.client " type="id_String" nullable="true"/>
+        <mapperTableEntries name="base_currency" expression="row1.base_currency " type="id_String" nullable="true"/>
+        <mapperTableEntries name="account" expression="row1.account " type="id_String" nullable="true"/>
+        <mapperTableEntries name="duedate" expression="row1.duedate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="poreference" expression="row1.poreference " type="id_String" nullable="true"/>
+        <mapperTableEntries name="grandtotal" expression="row1.grandtotal " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="one" expression="row1.one " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="two" expression="row1.two " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="three" expression="row1.three " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="four" expression="row1.four " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="five" expression="row1.five " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="outstanding" expression="row1.outstanding " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="basecur_one" expression="row1.basecur_one " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="basecur_two" expression="row1.basecur_two " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="basecur_three" expression="row1.basecur_three " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="basecur_four" expression="row1.basecur_four " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="basecur_five" expression="row1.basecur_five " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="basecuroutstanding" expression="row1.basecuroutstanding " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="qtyinvoiced" expression="0.0" type="id_Double"/>
+        <mapperTableEntries name="qtydelivered" expression="0.0" type="id_Double"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="client" type="id_String" nullable="true"/>
+        <mapperTableEntries name="organization" type="id_String" nullable="true"/>
+        <mapperTableEntries name="base_currency" type="id_String" nullable="true"/>
+        <mapperTableEntries name="bpartner" type="id_String" nullable="true"/>
+        <mapperTableEntries name="account" type="id_String" nullable="true"/>
+        <mapperTableEntries name="bpgroup" type="id_String" nullable="true"/>
+        <mapperTableEntries name="documentno" type="id_String" nullable="true"/>
+        <mapperTableEntries name="dateinvoiced" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="duedate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="poreference" type="id_String" nullable="true"/>
+        <mapperTableEntries name="grandtotal" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="one" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="two" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="three" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="four" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="five" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="outstanding" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="basecur_one" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="basecur_two" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="basecur_three" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="basecur_four" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="basecur_five" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="basecuroutstanding" type="id_Double" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tCassandraOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraOutput_1" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="cassandra_datastax_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tCassandraConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_2_0_0" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="DATASTAX" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Cassandra_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Cassandra_Port" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.Cassandra_UserName" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kueMHSJT71QWZHubocr6ON3TkKKAef0J23c=" show="false"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SPACE" value="&quot;salesmgmt&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_KEYSPACE" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CLOSED_LIST" name="REPLICA_STRATEGY" value="SimpleStrategy"/>
+    <elementParameter field="TEXT" name="SIMEPLE_REPLICA_NUMBER" value="1"/>
+    <elementParameter field="TABLE" name="NETWORK_REPLICA_TABLE" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_FAMILY" value="&quot;ar_aging&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="COLUMN_FAMILY_TYPE" value="STANDARD" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_COLUMN_FAMILY" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CHECK" name="DEFINE_CF_STRUCTS" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPARATOR" value="AsciiType" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="UPSERT" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="KEY_COLUMN" value="bpartner" show="false"/>
+    <elementParameter field="CHECK" name="INC_KEY" value="true" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="SUPER_KEY_COLUMN" value="bpartner" show="false"/>
+    <elementParameter field="CHECK" name="INC_SUPER_KEY" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DELETE_ROW" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DELETE_SUPER_COLUMN" value="false" show="false"/>
+    <elementParameter field="TABLE" name="DELETE_COLUMNS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_UNLOGGED_BATCH" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GROUP_METHOD" value="PARTITION" show="false"/>
+    <elementParameter field="CHECK" name="GROUP_CACHE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ASYNC" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONCURRENT_TASKS" value="5" show="false"/>
+    <elementParameter field="CHECK" name="INSERT_IF_NOT_EXISTS" value="false"/>
+    <elementParameter field="CHECK" name="DELETE_IF_EXISTS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USING_TTL" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="TTL" value="bpartner" show="false"/>
+    <elementParameter field="CHECK" name="USING_TIMESTAMP" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="TIMESTAMP" value="bpartner" show="false"/>
+    <elementParameter field="TABLE" name="IF_CONDITION" show="false"/>
+    <elementParameter field="TABLE" name="ASSIGNMENT_OPERATION" show="false"/>
+    <elementParameter field="TABLE" name="DELETE_COLUMN_BY_POSITION_KEY" show="false"/>
+    <elementParameter field="TABLE" name="ROW_KEY_IN_LIST" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Cassandra"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="tCassandraOutput_1">
+      <column comment="" key="true" length="60" name="bpgroup" nullable="true" pattern="" precision="0" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="aging_id" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="16" usefulColumn="true"/>
+      <column comment="" key="true" length="60" name="bpartner" nullable="false" pattern="" precision="0" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="29" name="dateinvoiced" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="6" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="documentno" nullable="false" pattern="" precision="0" sourceType="ascii" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="stmt_date" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="organization" nullable="false" pattern="" precision="0" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="client" nullable="true" pattern="" precision="0" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="base_currency" nullable="true" pattern="" precision="0" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="account" nullable="true" pattern="" precision="0" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="duedate" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="poreference" nullable="true" pattern="" precision="0" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="grandtotal" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="one" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="two" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="three" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="four" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="five" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="outstanding" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_one" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_two" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_three" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_four" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecur_five" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="basecuroutstanding" nullable="true" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="qtyinvoiced" nullable="false" pattern="" precision="-1" sourceType="double" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="qtydelivered" nullable="false" pattern="" precision="-1" sourceType="double" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dx7I0CDBEeOFVpCbbu2LHQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Openbravo_Server" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Openbravo_Port" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Openbravo_Database" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Openbravo_Schema" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Openbravo_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudjwOxeVpz4pU9CFfqdqGyrAk3RnyU/Q/s=" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &#xA;&#x9;documentno, sum(qtyinvoiced) as qtyinvoiced&#xA; from c_invoiceline a join c_invoice b on a.c_invoice_id = b.c_invoice_id&#xA; where b.documentno = '&quot; + globalMap.get(&quot;row2.documentno&quot;).toString() + &quot;'&#xA; and b.issotrx = 'Y' and a.ad_client_id = '&quot; + context.CLIENT_ID + &quot;'&#xA; group by b.documentno&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="documentno"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qtyinvoiced"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Total invoiced qty"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlInput_2">
+      <column comment="" key="true" length="30" name="documentno" nullable="false" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="qtyinvoiced" nullable="false" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_8QGbkNM1EeW7rtYmJTt-UA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out2">
+      <column comment="" key="true" length="60" name="bpgroup" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="aging_id" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="36" usefulColumn="true"/>
+      <column comment="" key="true" length="60" name="bpartner" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="dateinvoiced" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="documentno" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="qtyinvoiced" nullable="false" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out2">
+        <mapperTableEntries name="bpgroup" expression="(String)globalMap.get(&quot;row2.bpgroup&quot;)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="aging_id" expression="(String)globalMap.get(&quot;row2.aging_id&quot;)" type="id_String"/>
+        <mapperTableEntries name="bpartner" expression="(String)globalMap.get(&quot;row2.bpartner&quot;)" type="id_String"/>
+        <mapperTableEntries name="dateinvoiced" expression="(Date)globalMap.get(&quot;row2.dateinvoiced&quot;) " type="id_Date"/>
+        <mapperTableEntries name="documentno" expression="row3.documentno" type="id_String"/>
+        <mapperTableEntries name="qtyinvoiced" expression="row3.qtyinvoiced" type="id_Double"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="documentno" type="id_String"/>
+        <mapperTableEntries name="qtyinvoiced" type="id_Double"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tCassandraOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraOutput_2" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="cassandra_datastax_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tCassandraConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_2_0_0" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="DATASTAX" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Cassandra_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Cassandra_Port" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.Cassandra_UserName" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kueMHSJT71QWZHubocr6ON3TkKKAef0J23c=" show="false"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SPACE" value="&quot;salesmgmt&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_KEYSPACE" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="REPLICA_STRATEGY" value="SimpleStrategy" show="false"/>
+    <elementParameter field="TEXT" name="SIMEPLE_REPLICA_NUMBER" value="1" show="false"/>
+    <elementParameter field="TABLE" name="NETWORK_REPLICA_TABLE" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_FAMILY" value="&quot;ar_aging&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="COLUMN_FAMILY_TYPE" value="STANDARD" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_COLUMN_FAMILY" value="NONE"/>
+    <elementParameter field="CHECK" name="DEFINE_CF_STRUCTS" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPARATOR" value="AsciiType" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="UPSERT" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="KEY_COLUMN" value="bpartner" show="false"/>
+    <elementParameter field="CHECK" name="INC_KEY" value="true" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="SUPER_KEY_COLUMN" value="bpartner" show="false"/>
+    <elementParameter field="CHECK" name="INC_SUPER_KEY" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DELETE_ROW" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DELETE_SUPER_COLUMN" value="false" show="false"/>
+    <elementParameter field="TABLE" name="DELETE_COLUMNS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_UNLOGGED_BATCH" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GROUP_METHOD" value="PARTITION" show="false"/>
+    <elementParameter field="CHECK" name="GROUP_CACHE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ASYNC" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONCURRENT_TASKS" value="5" show="false"/>
+    <elementParameter field="CHECK" name="INSERT_IF_NOT_EXISTS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DELETE_IF_EXISTS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USING_TTL" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="TTL" value="bpartner" show="false"/>
+    <elementParameter field="CHECK" name="USING_TIMESTAMP" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="TIMESTAMP" value="bpartner" show="false"/>
+    <elementParameter field="TABLE" name="IF_CONDITION"/>
+    <elementParameter field="TABLE" name="ASSIGNMENT_OPERATION"/>
+    <elementParameter field="TABLE" name="DELETE_COLUMN_BY_POSITION_KEY" show="false"/>
+    <elementParameter field="TABLE" name="ROW_KEY_IN_LIST"/>
+    <elementParameter field="TEXT" name="LABEL" value="Cassandra"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tCassandraOutput_2">
+      <column comment="" key="true" length="60" name="bpgroup" nullable="true" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="aging_id" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="36" usefulColumn="true"/>
+      <column comment="" key="true" length="60" name="bpartner" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="dateinvoiced" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="documentno" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="qtyinvoiced" nullable="false" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xA;//output_row.bpartner = input_row.bpartner;&#xA;//output_row.aging_id = input_row.aging_id;&#xA;//output_row.dateinvoiced = input_row.dateinvoiced;&#xA;//output_row.documentno = input_row.documentno;&#xA;//output_row.qtyinvoiced = input_row.qtyinvoiced;&#xA;&#xA;&#xA;System.out.println(&quot;[&quot; + input_row.documentno + &quot;] invoiced : &quot; + input_row.qtyinvoiced);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="" key="true" length="60" name="bpartner" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="aging_id" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="36" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="dateinvoiced" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="documentno" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="qtyinvoiced" nullable="false" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dx7I0CDBEeOFVpCbbu2LHQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Openbravo_Server" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Openbravo_Port" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Openbravo_Database" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Openbravo_Schema" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Openbravo_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudjwOxeVpz4pU9CFfqdqGyrAk3RnyU/Q/s=" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select documentno,&#xA;    sum(qty) as qtydelivered&#xA; from m_matchinv a&#xA;&#x9;join c_invoiceline b on a.c_invoiceline_id = b.c_invoiceline_id&#xA;&#x9;join c_invoice c on b.c_invoice_id = c.c_invoice_id&#xA; where c.documentno = '&quot; + globalMap.get(&quot;row2.documentno&quot;).toString() + &quot;'&#xA; and c.issotrx = 'Y' and b.ad_client_id = '&quot; + context.CLIENT_ID + &quot;'&#xA; group by c.documentno&quot;&#xA;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="documentno"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qtydelivered"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Total delivered qty"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlInput_3">
+      <column comment="" key="true" length="30" name="documentno" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="qtydelivered" nullable="false" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_8QGbkNM1EeW7rtYmJTt-UA-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out3">
+      <column comment="" key="true" length="-1" name="bpgroup" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="aging_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="bpartner" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="dateinvoiced" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="documentno" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="qtydelivered" nullable="false" pattern="" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out3">
+        <mapperTableEntries name="bpgroup" expression="globalMap.get(&quot;row2.bpgroup&quot;).toString()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="aging_id" expression="globalMap.get(&quot;row2.aging_id&quot;).toString()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="bpartner" expression="globalMap.get(&quot;row2.bpartner&quot;).toString()" type="id_String" nullable="true"/>
+        <mapperTableEntries name="dateinvoiced" expression="(Date)globalMap.get(&quot;row2.dateinvoiced&quot;)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="documentno" expression="row4.documentno" type="id_String"/>
+        <mapperTableEntries name="qtydelivered" expression="row4.qtydelivered" type="id_Double"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="documentno" type="id_String"/>
+        <mapperTableEntries name="qtydelivered" type="id_Double"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tCassandraOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraOutput_3" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="cassandra_datastax_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tCassandraConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_2_0_0" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="DATASTAX" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Cassandra_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Cassandra_Port" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.Cassandra_UserName" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kueMHSJT71QWZHubocr6ON3TkKKAef0J23c=" show="false"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SPACE" value="&quot;salesmgmt&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_KEYSPACE" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="REPLICA_STRATEGY" value="SimpleStrategy" show="false"/>
+    <elementParameter field="TEXT" name="SIMEPLE_REPLICA_NUMBER" value="1" show="false"/>
+    <elementParameter field="TABLE" name="NETWORK_REPLICA_TABLE" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_FAMILY" value="&quot;ar_aging&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="COLUMN_FAMILY_TYPE" value="STANDARD" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_COLUMN_FAMILY" value="NONE"/>
+    <elementParameter field="CHECK" name="DEFINE_CF_STRUCTS" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPARATOR" value="AsciiType" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="UPSERT" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="KEY_COLUMN" value="documentno" show="false"/>
+    <elementParameter field="CHECK" name="INC_KEY" value="true" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="SUPER_KEY_COLUMN" value="documentno" show="false"/>
+    <elementParameter field="CHECK" name="INC_SUPER_KEY" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DELETE_ROW" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DELETE_SUPER_COLUMN" value="false" show="false"/>
+    <elementParameter field="TABLE" name="DELETE_COLUMNS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_UNLOGGED_BATCH" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GROUP_METHOD" value="PARTITION" show="false"/>
+    <elementParameter field="CHECK" name="GROUP_CACHE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ASYNC" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONCURRENT_TASKS" value="5" show="false"/>
+    <elementParameter field="CHECK" name="INSERT_IF_NOT_EXISTS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DELETE_IF_EXISTS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USING_TTL" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="TTL" value="documentno" show="false"/>
+    <elementParameter field="CHECK" name="USING_TIMESTAMP" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="TIMESTAMP" value="documentno" show="false"/>
+    <elementParameter field="TABLE" name="IF_CONDITION"/>
+    <elementParameter field="TABLE" name="ASSIGNMENT_OPERATION"/>
+    <elementParameter field="TABLE" name="DELETE_COLUMN_BY_POSITION_KEY" show="false"/>
+    <elementParameter field="TABLE" name="ROW_KEY_IN_LIST"/>
+    <elementParameter field="TEXT" name="LABEL" value="Cassandra"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tCassandraOutput_3">
+      <column comment="" key="true" length="-1" name="bpgroup" nullable="true" pattern="" precision="-1" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="aging_id" nullable="true" pattern="" precision="-1" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="bpartner" nullable="true" pattern="" precision="-1" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="dateinvoiced" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="documentno" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="qtydelivered" nullable="false" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_3" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xA;//output_row.bpartner = input_row.bpartner;&#xA;//output_row.aging_id = input_row.aging_id;&#xA;//output_row.dateinvoiced = input_row.dateinvoiced;&#xA;//output_row.documentno = input_row.documentno;&#xA;//output_row.qtydelivered = input_row.qtydelivered;&#xA;&#xA;System.out.println(&quot;[&quot; + input_row.documentno + &quot;] delivered : &quot; + input_row.qtydelivered);&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_3">
+      <column comment="" key="true" length="60" name="bpartner" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="60" usefulColumn="true"/>
+      <column comment="" key="true" length="36" name="aging_id" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="36" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="dateinvoiced" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="30" name="documentno" nullable="false" pattern="" precision="-1" sourceType="ascii" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="qtydelivered" nullable="false" pattern="" precision="0" sourceType="double" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tCassandraConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_lvkUoIy6EeWPP8XRWyn7-Q" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_2_0_0"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="DATASTAX"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Cassandra_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Cassandra_Port"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.Cassandra_UserName"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kueMHSJT71QWZHubocr6ON3TkKKAef0J23c="/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Cassandra"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostgresqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlClose_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlConnection_1" target="tPostgresqlInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlConnection_1" target="tCassandraConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tPostgresqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="client"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="organization"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="base_currency"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="bpartner"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="account"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="bpgroup"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="documentno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateinvoiced"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="duedate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="poreference"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="grandtotal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="one"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="two"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="three"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="four"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="five"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="outstanding"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_one"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_two"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_three"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_four"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_five"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecuroutstanding"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlInput_1" target="tPostgresqlClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tCassandraOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="bpartner"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="aging_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateinvoiced"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="documentno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="client"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="organization"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="base_currency"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="account"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="bpgroup"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="duedate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="poreference"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="grandtotal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="one"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="two"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="three"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="four"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="five"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="outstanding"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_one"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_two"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_three"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_four"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_five"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecuroutstanding"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="qtydelivered"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="qtyinvoiced"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="stmt_date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tCassandraOutput_1" offsetLabelX="0" offsetLabelY="0" source="tCassandraOutput_1" target="tFlowToIterate_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="bpartner"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="aging_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateinvoiced"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="documentno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="client"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="organization"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="base_currency"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="account"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="bpgroup"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="duedate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="poreference"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="grandtotal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="one"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="two"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="three"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="four"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="five"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="outstanding"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_one"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_two"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_three"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_four"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecur_five"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="basecuroutstanding"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="qtyinvoiced"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="qtydelivered"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFlowToIterate_1" target="tPostgresqlInput_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFlowToIterate_1" target="tPostgresqlInput_3">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tPostgresqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlInput_2" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="documentno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="qtyinvoiced"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tCassandraOutput_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="organization"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="aging_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="bpartner"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateinvoiced"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="documentno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="qtyinvoiced"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="bpgroup"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tCassandraOutput_2" offsetLabelX="0" offsetLabelY="0" source="tCassandraOutput_2" target="tJavaRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="bpartner"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="aging_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateinvoiced"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="documentno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="qtyinvoiced"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tPostgresqlInput_3" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlInput_3" target="tMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="bpartner"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateinvoiced"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="documentno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="qtydelivered"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="aging_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="organization"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tCassandraOutput_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="documentno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="qtydelivered"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateinvoiced"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="aging_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="bpartner"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="organization"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="bpgroup"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tCassandraOutput_3" offsetLabelX="0" offsetLabelY="0" source="tCassandraOutput_3" target="tJavaRow_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="bpartner"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="aging_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dateinvoiced"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="documentno"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="qtydelivered"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

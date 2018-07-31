@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_z__FcD1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Development">
+    <contextParameter xmi:id="_z__FcT1kEeiUTuV2_ubfgg" comment="" name="activemq_Host" prompt="activemq_Host?" promptNeeded="false" type="id_String" value="192.168.56.111"/>
+    <contextParameter xmi:id="_z__Fcj1kEeiUTuV2_ubfgg" comment="" name="activemq_Port" prompt="activemq_Port?" promptNeeded="false" type="id_String" value="51515"/>
+    <contextParameter xmi:id="_z__Fcz1kEeiUTuV2_ubfgg" comment="" name="activemq_Login" prompt="activemq_Login?" promptNeeded="false" type="id_String" value="admin"/>
+    <contextParameter xmi:id="_z__FdD1kEeiUTuV2_ubfgg" comment="" name="activemq_Password" prompt="activemq_Password?" promptNeeded="false" type="id_String" value="admin"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_z__FdT1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Live">
+    <contextParameter xmi:id="_z__Fdj1kEeiUTuV2_ubfgg" comment="" name="activemq_Host" prompt="activemq_Host?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_z__Fdz1kEeiUTuV2_ubfgg" comment="" name="activemq_Port" prompt="activemq_Port?" promptNeeded="false" type="id_String" value="51515"/>
+    <contextParameter xmi:id="_z__FeD1kEeiUTuV2_ubfgg" comment="" name="activemq_Login" prompt="activemq_Login?" promptNeeded="false" type="id_String" value="admin"/>
+    <contextParameter xmi:id="_z__FeT1kEeiUTuV2_ubfgg" comment="" name="activemq_Password" prompt="activemq_Password?" promptNeeded="false" type="id_String" value="admin"/>
+  </talendfile:ContextType>
+</xmi:XMI>

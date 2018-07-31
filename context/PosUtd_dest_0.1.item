@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_0AhQ8D1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_0AhQ8T1kEeiUTuV2_ubfgg" comment="" name="posutd_dest_Server" prompt="posutd_dest_Server?" promptNeeded="false" type="id_String" value="192.168.56.111"/>
+    <contextParameter xmi:id="_0AhQ8j1kEeiUTuV2_ubfgg" comment="" name="posutd_dest_Schema" prompt="posutd_dest_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0AhQ8z1kEeiUTuV2_ubfgg" comment="" name="posutd_dest_Port" prompt="posutd_dest_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_0AhQ9D1kEeiUTuV2_ubfgg" comment="" name="posutd_dest_Database" prompt="posutd_dest_Database?" promptNeeded="false" type="id_String" value="pos_united2"/>
+    <contextParameter xmi:id="_0AhQ9T1kEeiUTuV2_ubfgg" comment="" name="posutd_dest_Login" prompt="posutd_dest_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_0AhQ9j1kEeiUTuV2_ubfgg" comment="" name="posutd_dest_Password" prompt="posutd_dest_Password?" promptNeeded="false" type="id_String" value="postgres"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0AhQ9z1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Live">
+    <contextParameter xmi:id="_0AhQ-D1kEeiUTuV2_ubfgg" comment="" name="posutd_dest_Server" prompt="posutd_dest_Server?" promptNeeded="false" type="id_String" value="pelican"/>
+    <contextParameter xmi:id="_0AhQ-T1kEeiUTuV2_ubfgg" comment="" name="posutd_dest_Schema" prompt="posutd_dest_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0AhQ-j1kEeiUTuV2_ubfgg" comment="" name="posutd_dest_Port" prompt="posutd_dest_Port?" promptNeeded="false" type="id_String" value="5492"/>
+    <contextParameter xmi:id="_0AhQ-z1kEeiUTuV2_ubfgg" comment="" name="posutd_dest_Database" prompt="posutd_dest_Database?" promptNeeded="false" type="id_String" value="pos_united"/>
+    <contextParameter xmi:id="_0AhQ_D1kEeiUTuV2_ubfgg" comment="" name="posutd_dest_Login" prompt="posutd_dest_Login?" promptNeeded="false" type="id_String" value="pos_united"/>
+    <contextParameter xmi:id="_0AhQ_T1kEeiUTuV2_ubfgg" comment="" name="posutd_dest_Password" prompt="posutd_dest_Password?" promptNeeded="false" type="id_String" value="6edef2d"/>
+  </talendfile:ContextType>
+</xmi:XMI>

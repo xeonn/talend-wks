@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Live" jobType="Standard">
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="Cassandra_Server" prompt="Cassandra_Server?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Cassandra_Port" prompt="Cassandra_Port?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="9042"/>
+    <contextParameter comment="" name="Cassandra_Keyspace" prompt="Cassandra_Keyspace?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="retailmgr"/>
+    <contextParameter comment="" name="Cassandra_Password" prompt="Cassandra_Password?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="cassandra"/>
+    <contextParameter comment="" name="Cassandra_UserName" prompt="Cassandra_UserName?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="cassandra"/>
+    <contextParameter comment="" name="Openbravo_Port" prompt="Openbravo_Port?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="5432"/>
+    <contextParameter comment="" name="Openbravo_Server" prompt="Openbravo_Server?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Openbravo_Login" prompt="Openbravo_Login?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
+    <contextParameter comment="" name="Openbravo_Database" prompt="Openbravo_Database?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="sunyield"/>
+    <contextParameter comment="" name="Openbravo_Schema" prompt="Openbravo_Schema?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="public"/>
+    <contextParameter comment="" name="Openbravo_Password" prompt="Openbravo_Password?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
+  </context>
+  <context confirmationNeeded="false" name="Live">
+    <contextParameter comment="" name="Cassandra_Server" prompt="Cassandra_Server?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="192.168.100.21"/>
+    <contextParameter comment="" name="Cassandra_Port" prompt="Cassandra_Port?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="9042"/>
+    <contextParameter comment="" name="Cassandra_Keyspace" prompt="Cassandra_Keyspace?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="retailmgr"/>
+    <contextParameter comment="" name="Cassandra_Password" prompt="Cassandra_Password?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="cassandra"/>
+    <contextParameter comment="" name="Cassandra_UserName" prompt="Cassandra_UserName?" promptNeeded="false" repositoryContextId="_beFOsJpYEeWWouKlwQFb5w" type="id_String" value="cassandra"/>
+    <contextParameter comment="" name="Openbravo_Port" prompt="Openbravo_Port?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="5432"/>
+    <contextParameter comment="" name="Openbravo_Server" prompt="Openbravo_Server?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Openbravo_Login" prompt="Openbravo_Login?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
+    <contextParameter comment="" name="Openbravo_Database" prompt="Openbravo_Database?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
+    <contextParameter comment="" name="Openbravo_Schema" prompt="Openbravo_Schema?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="public"/>
+    <contextParameter comment="" name="Openbravo_Password" prompt="Openbravo_Password?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/usr/local/Apps/TOS_BD-20151029_1337-V6.1.0/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_FfgMoKGtEeW-yKyvGnHdrg" name="DataOperation"/>
+    <routinesParameter id="_FfkeEKGtEeW-yKyvGnHdrg" name="Mathematical"/>
+    <routinesParameter id="_FfdwYKGtEeW-yKyvGnHdrg" name="Numeric"/>
+    <routinesParameter id="_Ffio4KGtEeW-yKyvGnHdrg" name="Relational"/>
+    <routinesParameter id="_FfrLwKGtEeW-yKyvGnHdrg" name="StringHandling"/>
+    <routinesParameter id="_FevXoKGtEeW-yKyvGnHdrg" name="TalendDataGenerator"/>
+    <routinesParameter id="_FfpWkKGtEeW-yKyvGnHdrg" name="TalendDate"/>
+    <routinesParameter id="_Ffm6UKGtEeW-yKyvGnHdrg" name="TalendString"/>
+    <routinesParameter id="_WkXnMFhAEeW8y5tb7RwHJw" name="strtouuid"/>
+    <routinesParameter id="_ztxUED1kEeiUTuV2_ubfgg" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tCassandraConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_lvkUoIy6EeWPP8XRWyn7-Q" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_2_0_0"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="DATASTAX"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Cassandra_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Cassandra_Port"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.Cassandra_UserName"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kueMHSJT71QWZHubocr6ON3TkKKAef0J23c="/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Cassandra"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dx7I0CDBEeOFVpCbbu2LHQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Openbravo_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Openbravo_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Openbravo_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Openbravo_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.Openbravo_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudjwOxeVpz4pU9CFfqdqGyrAk3RnyU/Q/s="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Openbravo"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dx7I0CDBEeOFVpCbbu2LHQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Openbravo_Server" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Openbravo_Port" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Openbravo_Database" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Openbravo_Schema" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Openbravo_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudjwOxeVpz4pU9CFfqdqGyrAk3RnyU/Q/s=" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select m_product_id, value, upc, name from m_product&#xA; where issold='Y' and upc is not null&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="m_product_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="upc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="M_Product"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlInput_1">
+      <column comment="" key="false" length="32" name="m_product_id" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="value" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="upc" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="name" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tCassandraInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_lvkUoIy6EeWPP8XRWyn7-Q" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="cassandra_datastax_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tCassandraConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_2_0_0" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="DATASTAX" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Cassandra_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9042&quot;" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.Cassandra_UserName" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kueMHSJT71QWZHubocr6ON3TkKKAef0J23c=" show="false"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SPACE" value="context.Cassandra_Keyspace"/>
+    <elementParameter field="TEXT" name="COLUMN_FAMILY" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="COLUMN_FAMILY_TYPE" value="STANDARD" show="false"/>
+    <elementParameter field="CHECK" name="INC_KEY" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="KEY_COLUMN" value="ticketline_uuid" show="false"/>
+    <elementParameter field="OPENED_LIST" name="ROW_KEY_TYPE" value="String" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ROW_KEY_C_TYPE" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="INC_SUPER_KEY" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="SUPER_KEY_COLUMN" value="ticketline_uuid" show="false"/>
+    <elementParameter field="OPENED_LIST" name="SUPER_COLUMN_TYPE" value="String" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SUPER_COLUMN_C_TYPE" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_KEYS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROW_KEYS" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_START" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_END" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_LIMIT" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="COLUMNS" value="" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_START" value="" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_END" value="" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_LIMIT" value="1000" show="false"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;SELECT org_name, ticketclosed, product_name, ticketline_uuid&#xA; FROM retailmgr.sales_ticketlines&#xA; WHERE product_value = '&quot; + globalMap.get(&quot;row1.value&quot;).toString() + &quot;'&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="get PK"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tCassandraInput_1">
+      <column comment="" key="false" length="-1" name="org_name" nullable="true" pattern="" precision="-1" sourceType="varchar" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ticketclosed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="product_name" nullable="true" pattern="" precision="-1" sourceType="ascii" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ticketline_uuid" nullable="false" pattern="" precision="-1" sourceType="uuid" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_4" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_4"/>
+  </node>
+  <node componentName="tCassandraRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraRow_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_lvkUoIy6EeWPP8XRWyn7-Q" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tCassandraConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_2_0_0" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="DATASTAX" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Cassandra_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Cassandra_Port" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.Cassandra_UserName" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kueMHSJT71QWZHubocr6ON3TkKKAef0J23c=" show="false"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SPACE" value="context.Cassandra_Keyspace"/>
+    <elementParameter field="TEXT" name="COLUMN_FAMILY" value="&quot;&quot;"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;UPDATE retailmgr.sales_ticketlines&#xA; SET upc = '&quot; + (String)globalMap.get(&quot;row1.upc&quot;) + &quot;'&#xA; WHERE org_name = '&quot; + (String)globalMap.get(&quot;row4.org_name&quot;) + &quot;'&#xA; AND ticketclosed = '&quot; + new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format((Date)globalMap.get(&quot;row4.ticketclosed&quot;)) + &quot;'&#xA; AND product_name = '&quot; + globalMap.get(&quot;row4.product_name&quot;).toString().replace(&quot;'&quot;,&quot;''&quot;) + &quot;'&#xA; AND ticketline_uuid = &quot; + (String)globalMap.get(&quot;row4.ticketline_uuid&quot;)"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Cassandra"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tCassandraRow_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Updating UPC/CIC information&quot;);&#xA;System.out.println(&quot;-- please be patience. Have a cup of java.&quot;);&#xA;globalMap.put(&quot;counter&quot;, new Integer(0));&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="Integer n = (Integer)globalMap.get(&quot;counter&quot;);&#xA;if ( (n%257) == 0 )&#xA;&#x9;System.out.println(&quot; -- patience -- &quot; + n);&#xA;globalMap.put(&quot;counter&quot;, ++n);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dx7I0CDBEeOFVpCbbu2LHQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Openbravo_Server" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Openbravo_Port" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Openbravo_Database" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Openbravo_Schema" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Openbravo_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudjwOxeVpz4pU9CFfqdqGyrAk3RnyU/Q/s=" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select c_bpartner_id, value&#xA; from c_bpartner&#xA; where iscustomer='Y'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="c_bpartner_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="C_BPartner"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlInput_2">
+      <column comment="" key="false" length="32" name="c_bpartner_id" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="value" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_2" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_2"/>
+  </node>
+  <node componentName="tCassandraInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_lvkUoIy6EeWPP8XRWyn7-Q" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="cassandra_datastax_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tCassandraConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_2_0_0" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="DATASTAX" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Cassandra_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9042&quot;" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.Cassandra_UserName" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kueMHSJT71QWZHubocr6ON3TkKKAef0J23c=" show="false"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SPACE" value="context.Cassandra_Keyspace"/>
+    <elementParameter field="TEXT" name="COLUMN_FAMILY" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="COLUMN_FAMILY_TYPE" value="STANDARD" show="false"/>
+    <elementParameter field="CHECK" name="INC_KEY" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="KEY_COLUMN" value="ticketline_uuid" show="false"/>
+    <elementParameter field="OPENED_LIST" name="ROW_KEY_TYPE" value="String" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ROW_KEY_C_TYPE" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="INC_SUPER_KEY" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="SUPER_KEY_COLUMN" value="ticketline_uuid" show="false"/>
+    <elementParameter field="OPENED_LIST" name="SUPER_COLUMN_TYPE" value="String" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SUPER_COLUMN_C_TYPE" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_KEYS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROW_KEYS" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_START" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_END" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_LIMIT" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="COLUMNS" value="" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_START" value="" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_END" value="" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_LIMIT" value="1000" show="false"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;SELECT org_name, ticketclosed, product_name, ticketline_uuid&#xA; FROM retailmgr.sales_ticketlines&#xA; WHERE customer_uuid = '&quot;&#xA; + (strtouuid.convert((String)globalMap.get(&quot;row2.c_bpartner_id&quot;))).toString() + &quot;'&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="get PK"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tCassandraInput_2">
+      <column comment="" key="false" length="-1" name="org_name" nullable="true" pattern="" precision="-1" sourceType="varchar" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ticketclosed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="product_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ticketline_uuid" nullable="false" pattern="" precision="-1" sourceType="uuid" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_5" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_5"/>
+  </node>
+  <node componentName="tCassandraRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraRow_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_lvkUoIy6EeWPP8XRWyn7-Q" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tCassandraConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_2_0_0" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="DATASTAX" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Cassandra_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Cassandra_Port" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.Cassandra_UserName" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kueMHSJT71QWZHubocr6ON3TkKKAef0J23c=" show="false"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SPACE" value="context.Cassandra_Keyspace"/>
+    <elementParameter field="TEXT" name="COLUMN_FAMILY" value="&quot;&quot;"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;UPDATE retailmgr.sales_ticketlines&#xA; SET customer_value = '&quot; + (String)globalMap.get(&quot;row2.value&quot;) + &quot;'&#xA; WHERE org_name = '&quot; + (String)globalMap.get(&quot;row5.org_name&quot;) + &quot;'&#xA; AND ticketclosed = '&quot; + new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format((Date)globalMap.get(&quot;row5.ticketclosed&quot;)) + &quot;'&#xA; AND product_name = '&quot; + (String)globalMap.get(&quot;row5.product_name&quot;) + &quot;'&#xA; AND ticketline_uuid = &quot; + (String)globalMap.get(&quot;row5.ticketline_uuid&quot;)"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Cassandra"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tCassandraRow_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;DONE : &quot; + globalMap.get(&quot;counter&quot;).toString() + &quot; records updated&quot;);&#xA;System.out.println(&quot;Updating Customer membership number ..... &quot;);&#xA;globalMap.put(&quot;counter&quot;, new Integer(0));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="Integer n = (Integer)globalMap.get(&quot;counter&quot;);&#xA;if ( (n%257) == 0 )&#xA;&#x9;System.out.println(&quot; -- sebenter ya pak, saya sedang kerja-in (baca dalam loghat indon) -- &quot; + n);&#xA;globalMap.put(&quot;counter&quot;, ++n);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;DONE : &quot; + globalMap.get(&quot;counter&quot;).toString() + &quot; records updated&quot;);&#xA;System.out.println(&quot;Last one, updating Cashier staff number ..... &quot;);&#xA;globalMap.put(&quot;counter&quot;, new Integer(0));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_5"/>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dx7I0CDBEeOFVpCbbu2LHQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Openbravo_Server" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Openbravo_Port" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Openbravo_Database" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Openbravo_Schema" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Openbravo_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudjwOxeVpz4pU9CFfqdqGyrAk3RnyU/Q/s=" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select ad_user_id, b.value&#xA; from ad_user a join c_bpartner b on a.c_bpartner_id = b.c_bpartner_id&#xA; where isemployee='Y'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ad_user_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="AD_User"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tPostgresqlInput_3">
+      <column comment="" key="false" length="-1" name="ad_user_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="value" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_3" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_3"/>
+  </node>
+  <node componentName="tCassandraInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_lvkUoIy6EeWPP8XRWyn7-Q" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="cassandra_datastax_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tCassandraConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_2_0_0" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="DATASTAX" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Cassandra_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9042&quot;" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.Cassandra_UserName" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kueMHSJT71QWZHubocr6ON3TkKKAef0J23c=" show="false"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SPACE" value="context.Cassandra_Keyspace"/>
+    <elementParameter field="TEXT" name="COLUMN_FAMILY" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="COLUMN_FAMILY_TYPE" value="STANDARD" show="false"/>
+    <elementParameter field="CHECK" name="INC_KEY" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="KEY_COLUMN" value="ticketline_uuid" show="false"/>
+    <elementParameter field="OPENED_LIST" name="ROW_KEY_TYPE" value="String" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ROW_KEY_C_TYPE" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="INC_SUPER_KEY" value="false" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="SUPER_KEY_COLUMN" value="ticketline_uuid" show="false"/>
+    <elementParameter field="OPENED_LIST" name="SUPER_COLUMN_TYPE" value="String" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SUPER_COLUMN_C_TYPE" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_KEYS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROW_KEYS" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_START" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_END" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_LIMIT" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="COLUMNS" value="" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_START" value="" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_END" value="" show="false"/>
+    <elementParameter field="TEXT" name="COLUMN_LIMIT" value="1000" show="false"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;SELECT org_name, ticketclosed, product_name, ticketline_uuid&#xA; FROM retailmgr.sales_ticketlines&#xA; WHERE cashier_uuid = '&quot;&#xA; + (strtouuid.convert((String)globalMap.get(&quot;row3.ad_user_id&quot;))).toString() + &quot;'&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="get PK"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tCassandraInput_3">
+      <column comment="" key="false" length="-1" name="org_name" nullable="true" pattern="" precision="-1" sourceType="varchar" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ticketclosed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="timestamp" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="product_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ticketline_uuid" nullable="false" pattern="" precision="-1" sourceType="uuid" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_6" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_6"/>
+  </node>
+  <node componentName="tCassandraRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="928">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraRow_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_lvkUoIy6EeWPP8XRWyn7-Q" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tCassandraConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="CASSANDRA_2_0_0" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="API_TYPE" value="DATASTAX" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Cassandra_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Cassandra_Port" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.Cassandra_UserName" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kueMHSJT71QWZHubocr6ON3TkKKAef0J23c=" show="false"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SPACE" value="context.Cassandra_Keyspace"/>
+    <elementParameter field="TEXT" name="COLUMN_FAMILY" value="&quot;&quot;"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;UPDATE retailmgr.sales_ticketlines&#xA; SET cashier_value = '&quot; + (String)globalMap.get(&quot;row3.value&quot;) + &quot;'&#xA; WHERE org_name = '&quot; + (String)globalMap.get(&quot;row6.org_name&quot;) + &quot;'&#xA; AND ticketclosed = '&quot; + new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;).format((Date)globalMap.get(&quot;row6.ticketclosed&quot;)) + &quot;'&#xA; AND product_name = '&quot; + globalMap.get(&quot;row6.product_name&quot;).toString().replace(&quot;'&quot;, &quot;''&quot;) + &quot;'&#xA; AND ticketline_uuid = &quot; + (String)globalMap.get(&quot;row6.ticketline_uuid&quot;)"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Cassandra"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tCassandraRow_3"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="Integer n = (Integer)globalMap.get(&quot;counter&quot;);&#xA;if ( (n%257) == 0 )&#xA;&#x9;System.out.println(&quot; -- saber sikitttt.. lagi, saya kerja-in  -- &quot; + n);&#xA;globalMap.put(&quot;counter&quot;, ++n);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_6"/>
+  </node>
+  <node componentName="tPostgresqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="1152">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlClose_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tPostgresqlConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;DONE : &quot; + globalMap.get(&quot;counter&quot;).toString() + &quot; records updated&quot;);&#xA;System.out.println(&quot;Ta Daaaa..... Dah siap&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_7"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlConnection_1" target="tCassandraConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPostgresqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlConnection_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tPostgresqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlInput_1" target="tFlowToIterate_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="m_product_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="value"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="upc"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tCassandraInput_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tCassandraInput_1" offsetLabelX="0" offsetLabelY="0" source="tCassandraInput_1" target="tFlowToIterate_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="ticketline_uuid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="org_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ticketclosed"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="product_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_4" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_4" target="tCassandraRow_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate4" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tCassandraRow_1" offsetLabelX="0" offsetLabelY="0" source="tCassandraRow_1" target="tJava_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tPostgresqlInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tPostgresqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlInput_2" target="tFlowToIterate_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="c_bpartner_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="value"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_2" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_2" target="tCassandraInput_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tCassandraInput_2" offsetLabelX="0" offsetLabelY="0" source="tCassandraInput_2" target="tFlowToIterate_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="org_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ticketline_uuid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ticketclosed"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="product_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_5" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_5" target="tCassandraRow_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate5" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tCassandraRow_2" offsetLabelX="0" offsetLabelY="0" source="tCassandraRow_2" target="tJava_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tPostgresqlInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tJava_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tPostgresqlInput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tJava_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tPostgresqlInput_3" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlInput_3" target="tFlowToIterate_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="c_bpartner_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="value"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_3" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_3" target="tCassandraInput_3">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tCassandraInput_3" offsetLabelX="0" offsetLabelY="0" source="tCassandraInput_3" target="tFlowToIterate_6">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="org_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ticketline_uuid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ticketclosed"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="product_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_6" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_6" target="tCassandraRow_3">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate6" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tCassandraRow_3" offsetLabelX="0" offsetLabelY="0" source="tCassandraRow_3" target="tJava_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk7" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_7" offsetLabelX="0" offsetLabelY="0" source="tJava_7" target="tPostgresqlClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tCassandraConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Update UPC/CIC"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Update Customer Membership Number"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlInput_3" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Update Cashier Number"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostgresqlClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

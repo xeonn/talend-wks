@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_0BgvcD1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Dev">
+    <contextParameter xmi:id="_0BgvcT1kEeiUTuV2_ubfgg" comment="" name="olddb_Password" prompt="olddb_Password?" promptNeeded="false" type="id_Password" value="CNlsM2hQx/yKsFREJf9l+Q=="/>
+    <contextParameter xmi:id="_0Bgvcj1kEeiUTuV2_ubfgg" comment="" name="olddb_Schema" prompt="olddb_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0Bgvcz1kEeiUTuV2_ubfgg" comment="" name="olddb_Login" prompt="olddb_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_0BgvdD1kEeiUTuV2_ubfgg" comment="" name="olddb_Port" prompt="olddb_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_0BgvdT1kEeiUTuV2_ubfgg" comment="" name="olddb_Database" prompt="olddb_Database?" promptNeeded="false" type="id_String" value="cambrew2014"/>
+    <contextParameter xmi:id="_0Bgvdj1kEeiUTuV2_ubfgg" comment="" name="olddb_Server" prompt="olddb_Server?" promptNeeded="false" type="id_String" value="192.168.56.111"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0Bgvdz1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Live">
+    <contextParameter xmi:id="_0BgveD1kEeiUTuV2_ubfgg" comment="" name="olddb_Password" prompt="olddb_Password?" promptNeeded="false" type="id_Password" value="CNlsM2hQx/yKsFREJf9l+Q=="/>
+    <contextParameter xmi:id="_0BgveT1kEeiUTuV2_ubfgg" comment="" name="olddb_Schema" prompt="olddb_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0Bgvej1kEeiUTuV2_ubfgg" comment="" name="olddb_Login" prompt="olddb_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_0Bgvez1kEeiUTuV2_ubfgg" comment="" name="olddb_Port" prompt="olddb_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_0BgvfD1kEeiUTuV2_ubfgg" comment="" name="olddb_Database" prompt="olddb_Database?" promptNeeded="false" type="id_String" value="cambrew2014"/>
+    <contextParameter xmi:id="_0BgvfT1kEeiUTuV2_ubfgg" comment="" name="olddb_Server" prompt="olddb_Server?" promptNeeded="false" type="id_String" value="192.168.56.111"/>
+  </talendfile:ContextType>
+</xmi:XMI>

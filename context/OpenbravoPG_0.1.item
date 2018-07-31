@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_z_umwD1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Dev">
+    <contextParameter xmi:id="_z_umwT1kEeiUTuV2_ubfgg" comment="" name="OpenbravoPG_Server" prompt="OpenbravoPG_Server?" promptNeeded="false" type="id_String" value="192.168.56.111"/>
+    <contextParameter xmi:id="_z_umwj1kEeiUTuV2_ubfgg" comment="" name="OpenbravoPG_Login" prompt="OpenbravoPG_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_z_umwz1kEeiUTuV2_ubfgg" comment="" name="OpenbravoPG_Port" prompt="OpenbravoPG_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_z_umxD1kEeiUTuV2_ubfgg" comment="" name="OpenbravoPG_Database" prompt="OpenbravoPG_Database?" promptNeeded="false" type="id_String" value="imcoop"/>
+    <contextParameter xmi:id="_z_umxT1kEeiUTuV2_ubfgg" comment="" name="OpenbravoPG_Schema" prompt="OpenbravoPG_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_z_umxj1kEeiUTuV2_ubfgg" comment="" name="OpenbravoPG_Password" prompt="OpenbravoPG_Password?" promptNeeded="false" type="id_Password" value="CNlsM2hQx/yKsFREJf9l+Q=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_z_umxz1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Live">
+    <contextParameter xmi:id="_z_umyD1kEeiUTuV2_ubfgg" comment="" name="OpenbravoPG_Server" prompt="OpenbravoPG_Server?" promptNeeded="false" type="id_String" value="192.168.100.114"/>
+    <contextParameter xmi:id="_z_umyT1kEeiUTuV2_ubfgg" comment="" name="OpenbravoPG_Login" prompt="OpenbravoPG_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_z_umyj1kEeiUTuV2_ubfgg" comment="" name="OpenbravoPG_Port" prompt="OpenbravoPG_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_z_umyz1kEeiUTuV2_ubfgg" comment="" name="OpenbravoPG_Database" prompt="OpenbravoPG_Database?" promptNeeded="false" type="id_String" value="openbravolive"/>
+    <contextParameter xmi:id="_z_umzD1kEeiUTuV2_ubfgg" comment="" name="OpenbravoPG_Schema" prompt="OpenbravoPG_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_z_umzT1kEeiUTuV2_ubfgg" comment="" name="OpenbravoPG_Password" prompt="OpenbravoPG_Password?" promptNeeded="false" type="id_Password" value="CNlsM2hQx/yKsFREJf9l+Q=="/>
+  </talendfile:ContextType>
+</xmi:XMI>

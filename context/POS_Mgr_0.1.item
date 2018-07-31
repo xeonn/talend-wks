@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_0AQyQD1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Development">
+    <contextParameter xmi:id="_0AQyQT1kEeiUTuV2_ubfgg" comment="" name="posmgr_Server" prompt="posmgr_Server?" promptNeeded="false" type="id_String" value="192.168.56.111"/>
+    <contextParameter xmi:id="_0AQyQj1kEeiUTuV2_ubfgg" comment="" name="posmgr_Schema" prompt="posmgr_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0AQyQz1kEeiUTuV2_ubfgg" comment="" name="posmgr_Port" prompt="posmgr_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_0AQyRD1kEeiUTuV2_ubfgg" comment="" name="posmgr_Database" prompt="posmgr_Database?" promptNeeded="false" type="id_String" value="pos_manager"/>
+    <contextParameter xmi:id="_0AQyRT1kEeiUTuV2_ubfgg" comment="" name="posmgr_Login" prompt="posmgr_Login?" promptNeeded="false" type="id_String" value="pos_manager"/>
+    <contextParameter xmi:id="_0AQyRj1kEeiUTuV2_ubfgg" comment="" name="posmgr_Password" prompt="posmgr_Password?" promptNeeded="false" type="id_String" value="posmanager"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0AQyRz1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Live">
+    <contextParameter xmi:id="_0AQySD1kEeiUTuV2_ubfgg" comment="" name="posmgr_Server" prompt="posmgr_Server?" promptNeeded="false" type="id_String" value="penguin"/>
+    <contextParameter xmi:id="_0AQyST1kEeiUTuV2_ubfgg" comment="" name="posmgr_Schema" prompt="posmgr_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0AQySj1kEeiUTuV2_ubfgg" comment="" name="posmgr_Port" prompt="posmgr_Port?" promptNeeded="false" type="id_String" value="5493"/>
+    <contextParameter xmi:id="_0AQySz1kEeiUTuV2_ubfgg" comment="" name="posmgr_Database" prompt="posmgr_Database?" promptNeeded="false" type="id_String" value="pos_manager"/>
+    <contextParameter xmi:id="_0AQyTD1kEeiUTuV2_ubfgg" comment="" name="posmgr_Login" prompt="posmgr_Login?" promptNeeded="false" type="id_String" value="pos_manager"/>
+    <contextParameter xmi:id="_0AQyTT1kEeiUTuV2_ubfgg" comment="" name="posmgr_Password" prompt="posmgr_Password?" promptNeeded="false" type="id_String" value="6edef2d"/>
+  </talendfile:ContextType>
+</xmi:XMI>

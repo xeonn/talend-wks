@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_z_U-ID1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Development">
+    <contextParameter xmi:id="_z_U-IT1kEeiUTuV2_ubfgg" comment="" name="jejavipos_Server" prompt="jejavipos_Server?" promptNeeded="false" type="id_String" value="192.168.56.111"/>
+    <contextParameter xmi:id="_z_U-Ij1kEeiUTuV2_ubfgg" comment="" name="jejavipos_Port" prompt="jejavipos_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_z_U-Iz1kEeiUTuV2_ubfgg" comment="" name="jejavipos_Database" prompt="jejavipos_Database?" promptNeeded="false" type="id_String" value="jejavipos"/>
+    <contextParameter xmi:id="_z_U-JD1kEeiUTuV2_ubfgg" comment="" name="jejavipos_Schema" prompt="jejavipos_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_z_VlMD1kEeiUTuV2_ubfgg" comment="" name="jejavipos_Login" prompt="jejavipos_Login?" promptNeeded="false" type="id_String" value="unicenta"/>
+    <contextParameter xmi:id="_z_VlMT1kEeiUTuV2_ubfgg" comment="" name="jejavipos_Password" prompt="jejavipos_Password?" promptNeeded="false" type="id_String" value="unicenta"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_z_VlMj1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Live">
+    <contextParameter xmi:id="_z_VlMz1kEeiUTuV2_ubfgg" comment="" name="jejavipos_Server" prompt="jejavipos_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_z_VlND1kEeiUTuV2_ubfgg" comment="" name="jejavipos_Port" prompt="jejavipos_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_z_VlNT1kEeiUTuV2_ubfgg" comment="" name="jejavipos_Database" prompt="jejavipos_Database?" promptNeeded="false" type="id_String" value="jejavipos"/>
+    <contextParameter xmi:id="_z_VlNj1kEeiUTuV2_ubfgg" comment="" name="jejavipos_Schema" prompt="jejavipos_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_z_VlNz1kEeiUTuV2_ubfgg" comment="" name="jejavipos_Login" prompt="jejavipos_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_z_VlOD1kEeiUTuV2_ubfgg" comment="" name="jejavipos_Password" prompt="jejavipos_Password?" promptNeeded="false" type="id_String" value="postgres"/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_0BKxMD1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Dev">
+    <contextParameter xmi:id="_0BKxMT1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Password" prompt="jjvretail_Password?" promptNeeded="false" type="id_String" value="jejavi"/>
+    <contextParameter xmi:id="_0BKxMj1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Login" prompt="jjvretail_Login?" promptNeeded="false" type="id_String" value="jejavi"/>
+    <contextParameter xmi:id="_0BKxMz1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Port" prompt="jjvretail_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_0BKxND1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Schema" prompt="jjvretail_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0BKxNT1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Server" prompt="jjvretail_Server?" promptNeeded="false" type="id_String" value="192.168.56.7"/>
+    <contextParameter xmi:id="_0BKxNj1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Database" prompt="jjvretail_Database?" promptNeeded="false" type="id_String" value="jjv.retailmgr"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0BKxNz1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Live">
+    <contextParameter xmi:id="_0BKxOD1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Password" prompt="jjvretail_Password?" promptNeeded="false" type="id_String" value="jejavi"/>
+    <contextParameter xmi:id="_0BKxOT1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Login" prompt="jjvretail_Login?" promptNeeded="false" type="id_String" value="jejavi"/>
+    <contextParameter xmi:id="_0BKxOj1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Port" prompt="jjvretail_Port?" promptNeeded="false" type="id_String" value="5495"/>
+    <contextParameter xmi:id="_0BKxOz1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Schema" prompt="jjvretail_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0BKxPD1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Server" prompt="jjvretail_Server?" promptNeeded="false" type="id_String" value="192.168.100.25"/>
+    <contextParameter xmi:id="_0BKxPT1kEeiUTuV2_ubfgg" comment="" name="jjvretail_Database" prompt="jjvretail_Database?" promptNeeded="false" type="id_String" value="jjv.retailmgr"/>
+  </talendfile:ContextType>
+</xmi:XMI>

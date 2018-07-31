@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_h6IZoIOZEeSE168B5TCIcA" name="POS_Manager" id="_VemtEIOZEeSE168B5TCIcA" label="POS_Manager" dataPackage="_wfhyIK3dEeSnycqKeGB6ww" ContextMode="true" ContextId="_QS4rIJBHEeS0ycxPT4ZA6Q" contextName="Development" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://192.168.56.111:5432/pos_manager" dbVersionString="V9_X" Port="context.posmgr_Port" Username="context.posmgr_Login" Password="context.posmgr_Password" ServerName="context.posmgr_Server" DatasourceName="" FileFieldName="" SID="context.posmgr_Database" SqlSynthax="SQL Syntax" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="context.posmgr_Schema">
+    <taggedValue xmi:id="_h6JAsIOZEeSE168B5TCIcA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_h6rMMIOZEeSE168B5TCIcA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_h7BKcIOZEeSE168B5TCIcA" tag="Status" value=""/>
+    <taggedValue xmi:id="_h7BKcYOZEeSE168B5TCIcA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_h7BKcoOZEeSE168B5TCIcA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_h7BKc4OZEeSE168B5TCIcA" tag="Description" value=""/>
+    <taggedValue xmi:id="_h7BKdIOZEeSE168B5TCIcA" tag="Author" value=""/>
+    <taggedValue xmi:id="_h7BKdYOZEeSE168B5TCIcA" tag="otherParameter"/>
+    <taggedValue xmi:id="_h7KUYIOZEeSE168B5TCIcA" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_h7KUYYOZEeSE168B5TCIcA" tag="DB ProductVersion" value="9.2.9"/>
+    <taggedValue xmi:id="_h7KUYoOZEeSE168B5TCIcA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_h6JAsYOZEeSE168B5TCIcA" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_wfhyIK3dEeSnycqKeGB6ww" name="pos_manager" dataManager="_h6IZoIOZEeSE168B5TCIcA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wfhyIa3dEeSnycqKeGB6ww" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

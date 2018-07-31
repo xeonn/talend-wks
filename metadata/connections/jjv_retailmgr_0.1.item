@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_tdQgoFS1EeWZ7esc-S_5IQ" name="jjv.retailmgr" id="_Ftb8cFS1EeWZ7esc-S_5IQ" label="jjv.retailmgr" dataPackage="_3MBP0M_WEeWshPimKmX8Hw" ContextMode="true" ContextId="_s8brgFS1EeWZ7esc-S_5IQ" contextName="Dev" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://192.168.56.101:5432/jjv.retailmgr" dbVersionString="V9_X" Port="context.jjvretail_Port" Username="context.jjvretail_Login" Password="context.jjvretail_Password" ServerName="context.jjvretail_Server" DatasourceName="" FileFieldName="" SID="context.jjvretail_Database" SqlSynthax="SQL Syntax" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="context.jjvretail_Schema">
+    <taggedValue xmi:id="_tdQgoVS1EeWZ7esc-S_5IQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_tdd8AFS1EeWZ7esc-S_5IQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_tdrXYFS1EeWZ7esc-S_5IQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_tdrXYVS1EeWZ7esc-S_5IQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_tdrXYlS1EeWZ7esc-S_5IQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_tdrXY1S1EeWZ7esc-S_5IQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_tdrXZFS1EeWZ7esc-S_5IQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_tdr-cFS1EeWZ7esc-S_5IQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_tdxeAFS1EeWZ7esc-S_5IQ" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_tdxeAVS1EeWZ7esc-S_5IQ" tag="DB ProductVersion" value="9.5.0"/>
+    <taggedValue xmi:id="_tdxeAlS1EeWZ7esc-S_5IQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_tdQgolS1EeWZ7esc-S_5IQ" key="CONN_PARA_KEY_USERNAME" value="context.jjv_retail_sales_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_3MBP0M_WEeWshPimKmX8Hw" name="jjv.retailmgr" dataManager="_tdQgoFS1EeWZ7esc-S_5IQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_3MBP0c_WEeWshPimKmX8Hw" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

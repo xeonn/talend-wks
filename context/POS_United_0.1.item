@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_0AZVID1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Dev">
+    <contextParameter xmi:id="_0AZVIT1kEeiUTuV2_ubfgg" comment="" name="posunited_Server" prompt="posunited_Server?" promptNeeded="false" type="id_String" value="192.168.56.111"/>
+    <contextParameter xmi:id="_0AZVIj1kEeiUTuV2_ubfgg" comment="" name="posunited_Schema" prompt="posunited_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0AZVIz1kEeiUTuV2_ubfgg" comment="" name="posunited_Port" prompt="posunited_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_0AZVJD1kEeiUTuV2_ubfgg" comment="" name="posunited_Database" prompt="posunited_Database?" promptNeeded="false" type="id_String" value="pos_united"/>
+    <contextParameter xmi:id="_0AZVJT1kEeiUTuV2_ubfgg" comment="" name="posunited_Login" prompt="posunited_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_0AZVJj1kEeiUTuV2_ubfgg" comment="" name="posunited_Password" prompt="posunited_Password?" promptNeeded="false" type="id_String" value="postgres"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0AZVJz1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Live">
+    <contextParameter xmi:id="_0AZVKD1kEeiUTuV2_ubfgg" comment="" name="posunited_Server" prompt="posunited_Server?" promptNeeded="false" type="id_String" value="pelican"/>
+    <contextParameter xmi:id="_0AZVKT1kEeiUTuV2_ubfgg" comment="" name="posunited_Schema" prompt="posunited_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0AZVKj1kEeiUTuV2_ubfgg" comment="" name="posunited_Port" prompt="posunited_Port?" promptNeeded="false" type="id_String" value="5492"/>
+    <contextParameter xmi:id="_0AZVKz1kEeiUTuV2_ubfgg" comment="" name="posunited_Database" prompt="posunited_Database?" promptNeeded="false" type="id_String" value="pos_united"/>
+    <contextParameter xmi:id="_0AZVLD1kEeiUTuV2_ubfgg" comment="" name="posunited_Login" prompt="posunited_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_0AZVLT1kEeiUTuV2_ubfgg" comment="" name="posunited_Password" prompt="posunited_Password?" promptNeeded="false" type="id_String" value="6edef2d"/>
+  </talendfile:ContextType>
+</xmi:XMI>

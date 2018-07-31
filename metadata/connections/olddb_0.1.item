@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="__755QGaoEeWIJf6_DvX-kA" name="olddb" id="_mB1j8GaoEeWIJf6_DvX-kA" label="olddb" dataPackage="_FO-VYGapEeWIJf6_DvX-kA" ContextMode="true" ContextId="__uhkkGaoEeWIJf6_DvX-kA" contextName="Dev" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://192.168.56.111:5432/cambrew2014" dbVersionString="V9_X" Port="context.olddb_Port" Username="context.olddb_Login" Password="context.olddb_Password" ServerName="context.olddb_Server" DatasourceName="" FileFieldName="" SID="context.olddb_Database" SqlSynthax="SQL Syntax" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="context.olddb_Schema">
+    <taggedValue xmi:id="__755QWaoEeWIJf6_DvX-kA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="__8CcIGaoEeWIJf6_DvX-kA" tag="package filter" value=""/>
+    <taggedValue xmi:id="__8CcIWaoEeWIJf6_DvX-kA" tag="Status" value=""/>
+    <taggedValue xmi:id="__8CcImaoEeWIJf6_DvX-kA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="__8CcI2aoEeWIJf6_DvX-kA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="__8CcJGaoEeWIJf6_DvX-kA" tag="Description" value=""/>
+    <taggedValue xmi:id="__8CcJWaoEeWIJf6_DvX-kA" tag="Author" value=""/>
+    <taggedValue xmi:id="__8CcJmaoEeWIJf6_DvX-kA" tag="otherParameter"/>
+    <taggedValue xmi:id="__8IiwGaoEeWIJf6_DvX-kA" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="__8IiwWaoEeWIJf6_DvX-kA" tag="DB ProductVersion" value="9.2.13"/>
+    <taggedValue xmi:id="__8IiwmaoEeWIJf6_DvX-kA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="__76gUGaoEeWIJf6_DvX-kA" key="CONN_PARA_KEY_USERNAME" value="context.olddb_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_FO-VYGapEeWIJf6_DvX-kA" name="cambrew2014" dataManager="__755QGaoEeWIJf6_DvX-kA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_FO-VYWapEeWIJf6_DvX-kA" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

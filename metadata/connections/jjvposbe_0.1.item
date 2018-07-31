@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_EfqSMF8IEea4GcHvvINIsQ" name="jjvposbe" id="_zJjiAF8HEea4GcHvvINIsQ" label="jjvposbe" dataPackage="_Eg7dgF8IEea4GcHvvINIsQ" ContextMode="true" ContextId="_ENincF8IEea4GcHvvINIsQ" contextName="Dev" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://192.168.56.7:5432/jjvposbe" dbVersionString="V9_X" Port="context.jjvposbe_Port" Username="context.jjvposbe_Login" Password="context.jjvposbe_Password" ServerName="context.jjvposbe_Server" DatasourceName="" FileFieldName="" SID="context.jjvposbe_Database" SqlSynthax="SQL Syntax" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="context.jjvposbe_Schema">
+    <taggedValue xmi:id="_EfqSMV8IEea4GcHvvINIsQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_EgupMF8IEea4GcHvvINIsQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_EgupMV8IEea4GcHvvINIsQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_EgupMl8IEea4GcHvvINIsQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_EgupM18IEea4GcHvvINIsQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_EgupNF8IEea4GcHvvINIsQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_EgupNV8IEea4GcHvvINIsQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_EgupNl8IEea4GcHvvINIsQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_Egy6oF8IEea4GcHvvINIsQ" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_Egy6oV8IEea4GcHvvINIsQ" tag="DB ProductVersion" value="9.5.2"/>
+    <taggedValue xmi:id="_Egy6ol8IEea4GcHvvINIsQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_EfqSMl8IEea4GcHvvINIsQ" key="CONN_PARA_KEY_USERNAME" value="context.jjvposbe_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_Eg7dgF8IEea4GcHvvINIsQ" name="jjvposbe" dataManager="_EfqSMF8IEea4GcHvvINIsQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Eg7dgV8IEea4GcHvvINIsQ" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

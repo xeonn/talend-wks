@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_z_3JoD1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Dev">
+    <contextParameter xmi:id="_z_3JoT1kEeiUTuV2_ubfgg" comment="" name="Openbravo_Login" prompt="Openbravo_Login?" promptNeeded="false" type="id_String" value="openbravo"/>
+    <contextParameter xmi:id="_z_3Joj1kEeiUTuV2_ubfgg" comment="" name="Openbravo_Port" prompt="Openbravo_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_z_3Joz1kEeiUTuV2_ubfgg" comment="" name="Openbravo_Schema" prompt="Openbravo_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_z_3JpD1kEeiUTuV2_ubfgg" comment="" name="Openbravo_Server" prompt="Openbravo_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_z_3JpT1kEeiUTuV2_ubfgg" comment="" name="Openbravo_Database" prompt="Openbravo_Database?" promptNeeded="false" type="id_String" value="sunyield"/>
+    <contextParameter xmi:id="_z_3Jpj1kEeiUTuV2_ubfgg" comment="" name="Openbravo_Password" prompt="Openbravo_Password?" promptNeeded="false" type="id_String" value="openbravo"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_z_3Jpz1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Live">
+    <contextParameter xmi:id="_z_3JqD1kEeiUTuV2_ubfgg" comment="" name="Openbravo_Login" prompt="Openbravo_Login?" promptNeeded="false" type="id_String" value="openbravo"/>
+    <contextParameter xmi:id="_z_3JqT1kEeiUTuV2_ubfgg" comment="" name="Openbravo_Port" prompt="Openbravo_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_z_3Jqj1kEeiUTuV2_ubfgg" comment="" name="Openbravo_Schema" prompt="Openbravo_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_z_3Jqz1kEeiUTuV2_ubfgg" comment="" name="Openbravo_Server" prompt="Openbravo_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter xmi:id="_z_3JrD1kEeiUTuV2_ubfgg" comment="" name="Openbravo_Database" prompt="Openbravo_Database?" promptNeeded="false" type="id_String" value="openbravo"/>
+    <contextParameter xmi:id="_z_3JrT1kEeiUTuV2_ubfgg" comment="" name="Openbravo_Password" prompt="Openbravo_Password?" promptNeeded="false" type="id_String" value="openbravo"/>
+  </talendfile:ContextType>
+</xmi:XMI>

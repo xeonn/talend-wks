@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_-JKwIN1yEeOBbqKd-JyFQQ" name="POS_Dist" id="_zeU-EN1yEeOBbqKd-JyFQQ" label="POS_Dist" dataPackage="_-KN5AN1yEeOBbqKd-JyFQQ" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://192.168.56.111:5432/pos_dist" dbVersionString="V9_X" Port="5432" Username="unicenta" Password="awIXiutz6AZZLso9JZGDVQ==" ServerName="192.168.56.111" DatasourceName="" FileFieldName="" SID="pos_dist" SqlSynthax="SQL Syntax" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" SystemSQL="true" SQLMode="false" UiSchema="public">
+    <taggedValue xmi:id="_-JKwId1yEeOBbqKd-JyFQQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_-J6-EN1yEeOBbqKd-JyFQQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_-KF9MN1yEeOBbqKd-JyFQQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_-KF9Md1yEeOBbqKd-JyFQQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_-KF9Mt1yEeOBbqKd-JyFQQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_-KF9M91yEeOBbqKd-JyFQQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_-KF9NN1yEeOBbqKd-JyFQQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_-KF9Nd1yEeOBbqKd-JyFQQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_-KHLUN1yEeOBbqKd-JyFQQ" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_-KHLUd1yEeOBbqKd-JyFQQ" tag="DB ProductVersion" value="9.2.8"/>
+    <taggedValue xmi:id="_-KHLUt1yEeOBbqKd-JyFQQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_-JKwIt1yEeOBbqKd-JyFQQ" key="CONN_PARA_KEY_USERNAME" value="unicenta"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_-KN5AN1yEeOBbqKd-JyFQQ" name="pos_dist" dataManager="_-JKwIN1yEeOBbqKd-JyFQQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_-KN5Ad1yEeOBbqKd-JyFQQ" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

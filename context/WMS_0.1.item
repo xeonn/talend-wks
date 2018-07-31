@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_0A4dUD1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Dev">
+    <contextParameter xmi:id="_0A4dUT1kEeiUTuV2_ubfgg" comment="" name="WMS_Server" prompt="WMS_Server?" promptNeeded="false" type="id_String" value="192.168.56.101"/>
+    <contextParameter xmi:id="_0A4dUj1kEeiUTuV2_ubfgg" comment="" name="WMS_Port" prompt="WMS_Port?" promptNeeded="false" type="id_String" value="5432"/>
+    <contextParameter xmi:id="_0A4dUz1kEeiUTuV2_ubfgg" comment="" name="WMS_Schema" prompt="WMS_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0A5EYD1kEeiUTuV2_ubfgg" comment="" name="WMS_Password" prompt="WMS_Password?" promptNeeded="false" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_0A5EYT1kEeiUTuV2_ubfgg" comment="" name="WMS_Database" prompt="WMS_Database?" promptNeeded="false" type="id_String" value="imc.wms"/>
+    <contextParameter xmi:id="_0A5EYj1kEeiUTuV2_ubfgg" comment="" name="WMS_Login" prompt="WMS_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0A5EYz1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Live">
+    <contextParameter xmi:id="_0A5EZD1kEeiUTuV2_ubfgg" comment="" name="WMS_Server" prompt="WMS_Server?" promptNeeded="false" type="id_String" value="192.168.100.25"/>
+    <contextParameter xmi:id="_0A5EZT1kEeiUTuV2_ubfgg" comment="" name="WMS_Port" prompt="WMS_Port?" promptNeeded="false" type="id_String" value="5495"/>
+    <contextParameter xmi:id="_0A5EZj1kEeiUTuV2_ubfgg" comment="" name="WMS_Schema" prompt="WMS_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0A5EZz1kEeiUTuV2_ubfgg" comment="" name="WMS_Password" prompt="WMS_Password?" promptNeeded="false" type="id_String" value="jboss"/>
+    <contextParameter xmi:id="_0A5EaD1kEeiUTuV2_ubfgg" comment="" name="WMS_Database" prompt="WMS_Database?" promptNeeded="false" type="id_String" value="los.reference"/>
+    <contextParameter xmi:id="_0A5EaT1kEeiUTuV2_ubfgg" comment="" name="WMS_Login" prompt="WMS_Login?" promptNeeded="false" type="id_String" value="jboss"/>
+  </talendfile:ContextType>
+</xmi:XMI>

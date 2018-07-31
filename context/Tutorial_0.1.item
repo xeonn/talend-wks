@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_0AwhgD1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_0AwhgT1kEeiUTuV2_ubfgg" comment="" name="Tutorial_Schema" prompt="Tutorial_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0Awhgj1kEeiUTuV2_ubfgg" comment="" name="Tutorial_Login" prompt="Tutorial_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_0Awhgz1kEeiUTuV2_ubfgg" comment="" name="Tutorial_Password" prompt="Tutorial_Password?" promptNeeded="false" type="id_Password" value="CNlsM2hQx/yKsFREJf9l+Q=="/>
+    <contextParameter xmi:id="_0AwhhD1kEeiUTuV2_ubfgg" comment="" name="Tutorial_Server" prompt="Tutorial_Server?" promptNeeded="false" type="id_String" value="192.168.200.174"/>
+    <contextParameter xmi:id="_0AwhhT1kEeiUTuV2_ubfgg" comment="" name="Tutorial_Database" prompt="Tutorial_Database?" promptNeeded="false" type="id_String" value="openbravo30"/>
+    <contextParameter xmi:id="_0Awhhj1kEeiUTuV2_ubfgg" comment="" name="Tutorial_Port" prompt="Tutorial_Port?" promptNeeded="false" type="id_String" value="5432"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0Awhhz1kEeiUTuV2_ubfgg" confirmationNeeded="false" name="Local">
+    <contextParameter xmi:id="_0AwhiD1kEeiUTuV2_ubfgg" comment="" name="Tutorial_Schema" prompt="Tutorial_Schema?" promptNeeded="false" type="id_String" value="public"/>
+    <contextParameter xmi:id="_0AwhiT1kEeiUTuV2_ubfgg" comment="" name="Tutorial_Login" prompt="Tutorial_Login?" promptNeeded="false" type="id_String" value="postgres"/>
+    <contextParameter xmi:id="_0Awhij1kEeiUTuV2_ubfgg" comment="" name="Tutorial_Password" prompt="Tutorial_Password?" promptNeeded="false" type="id_Password" value="CNlsM2hQx/yKsFREJf9l+Q=="/>
+    <contextParameter xmi:id="_0Awhiz1kEeiUTuV2_ubfgg" comment="" name="Tutorial_Server" prompt="Tutorial_Server?" promptNeeded="false" type="id_String" value="sparrow"/>
+    <contextParameter xmi:id="_0AwhjD1kEeiUTuV2_ubfgg" comment="" name="Tutorial_Database" prompt="Tutorial_Database?" promptNeeded="false" type="id_String" value="openbravo30"/>
+    <contextParameter xmi:id="_0AwhjT1kEeiUTuV2_ubfgg" comment="" name="Tutorial_Port" prompt="Tutorial_Port?" promptNeeded="false" type="id_String" value="5432"/>
+  </talendfile:ContextType>
+</xmi:XMI>
