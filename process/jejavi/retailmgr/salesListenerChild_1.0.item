@@ -25,7 +25,7 @@
     <contextParameter comment="" name="Openbravo_Port" prompt="Openbravo_Port?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="5432"/>
     <contextParameter comment="" name="Openbravo_Server" prompt="Openbravo_Server?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="localhost"/>
     <contextParameter comment="" name="Openbravo_Login" prompt="Openbravo_Login?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
-    <contextParameter comment="" name="Openbravo_Database" prompt="Openbravo_Database?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="sunyield"/>
+    <contextParameter comment="" name="Openbravo_Database" prompt="Openbravo_Database?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="disted"/>
     <contextParameter comment="" name="Openbravo_Schema" prompt="Openbravo_Schema?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="public"/>
     <contextParameter comment="" name="Openbravo_Password" prompt="Openbravo_Password?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
   </context>

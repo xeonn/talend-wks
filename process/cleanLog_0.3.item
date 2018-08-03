@@ -5,7 +5,7 @@
     <contextParameter comment="" name="Openbravo_Port" prompt="Openbravo_Port?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="5432"/>
     <contextParameter comment="" name="Openbravo_Server" prompt="Openbravo_Server?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="localhost"/>
     <contextParameter comment="" name="Openbravo_Login" prompt="Openbravo_Login?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
-    <contextParameter comment="" name="Openbravo_Database" prompt="Openbravo_Database?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="sunyield"/>
+    <contextParameter comment="" name="Openbravo_Database" prompt="Openbravo_Database?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="disted"/>
     <contextParameter comment="" name="Openbravo_Schema" prompt="Openbravo_Schema?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="public"/>
     <contextParameter comment="" name="Openbravo_Password" prompt="Openbravo_Password?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="openbravo"/>
   </context>
@@ -1068,6 +1068,11 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
   </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tSetGlobalVar_4" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_4" target="tPostgresqlRow_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;ad_pinstance_hasnext&quot;)) == true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tSetGlobalVar_4" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_4" target="tJavaRow_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="count"/>
@@ -1077,11 +1082,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
-  </connection>
-  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tSetGlobalVar_4" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_4" target="tPostgresqlRow_3">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;ad_pinstance_hasnext&quot;)) == true"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlRow_3" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlRow_3" target="tPostgresqlCommit_3">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>

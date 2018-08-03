@@ -6,7 +6,7 @@
     <contextParameter comment="" name="Openbravo_Port" prompt="Openbravo_Port?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="5432"/>
     <contextParameter comment="" name="Openbravo_Schema" prompt="Openbravo_Schema?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="public"/>
     <contextParameter comment="" name="Openbravo_Server" prompt="Openbravo_Server?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="Openbravo_Database" prompt="Openbravo_Database?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="sunyield"/>
+    <contextParameter comment="" name="Openbravo_Database" prompt="Openbravo_Database?" promptNeeded="false" repositoryContextId="_YlgTUJ8fEeW1JKD1v_cN_Q" type="id_String" value="disted"/>
     <contextParameter comment="" name="OBPRICELIST_VERSION_ID" prompt="OBPRICELIST_VERSION_ID?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="CLIENT_ID" prompt="CLIENT_ID?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="ORG_ID" prompt="ORG_ID?" promptNeeded="false" type="id_String" value=""/>
